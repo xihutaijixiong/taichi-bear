@@ -1,0 +1,47 @@
+baseURL = "/"
+relativeURLs = true
+canonifyURLs = false
+languageCode = "zh-cn"
+title = "西湖太极熊"
+theme = "PaperMod"
+
+[params]
+env = "development"
+description = "INTJ思维 · 深度洞察 · 创新解决方案"
+customCSS = ["css/custom.css"]
+
+# 强制显示所有文章（包括未来的）
+[build]
+  buildDrafts = true
+  buildFuture = true
+  buildExpired = true
+
+[menu]
+    [[menu.main]]
+        name = "首页"
+        url = "/"
+        weight = 1
+    [[menu.main]]
+        name = "关于"
+        url = "/about/"
+        weight = 2
+    [[menu.main]]
+        name = "案例"
+        url = "/cases/"
+        weight = 3
+    [[menu.main]]
+        name = "产品"
+        url = "/products/"
+        weight = 4
+    [[menu.main]]
+        name = "博客"
+        url = "/posts/"
+        weight = 5
+    [[menu.main]]
+        name = "资源"
+        url = "/resources/"
+        weight = 6
+
+
+
+

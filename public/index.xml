@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>首页 on 西湖太极熊</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content in 首页 on 西湖太极熊</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 22 Jul 2026 10:00:00 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我用 Obsidian 搭建了一个全球信息订阅系统</title>
+      <link>//localhost:1313/posts/article1/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>//localhost:1313/posts/article1/</guid>
+      <description>用Obsidian搭建系统化的订阅输入和输出闭环，先要有一个全球订阅输入</description>
+    </item>
+    <item>
+      <title>新手别折腾了：这套 Obsidian &#43; DeepSeek 组合，便宜又能直接用</title>
+      <link>//localhost:1313/posts/article3/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>//localhost:1313/posts/article3/</guid>
+      <description>数据分析师如何用结构化思维拆解业务问题，INTJ视角的思考方式</description>
+    </item>
+    <item>
+      <title>折腾了一圈，最终90%的使用仅仅依赖这5个插件！</title>
+      <link>//localhost:1313/posts/article2/</link>
+      <pubDate>Tue, 21 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>//localhost:1313/posts/article2/</guid>
+      <description>obsidian高效使用覆盖大部分场景仅仅5个插件就够了</description>
+    </item>
+  </channel>
+</rss>

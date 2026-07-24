@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>折腾了一圈，最终90%的使用仅仅依赖这5个插件！ | 西湖太极熊</title>
+<meta name="keywords" content="">
+<meta name="description" content="obsidian高效使用覆盖大部分场景仅仅5个插件就够了">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/article2/">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.8d28b609a9b9fe056815a797e5dada54f9337ab991200c4b79f12e56ea1d9b9a.css" integrity="sha256-jSi2Cam5/gVoFaeX5draVPkzermRIAxLefEuVuodm5o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/article2/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="西湖太极熊 (Alt + H)">西湖太极熊</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="//localhost:1313/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/cases/" title="案例">
+                    <span>案例</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/products/" title="产品">
+                    <span>产品</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/" title="博客">
+                    <span>博客</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/resources/" title="资源">
+                    <span>资源</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      折腾了一圈，最终90%的使用仅仅依赖这5个插件！
+    </h1>
+    <div class="post-description">
+      obsidian高效使用覆盖大部分场景仅仅5个插件就够了
+    </div>
+    <div class="post-meta">
+
+<span title='2026-07-21 10:00:00 +0800 CST'>July 21, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>基本上obsidian按照下载量排序，前100个插件都了解和研究过，满足了我极大的好奇心和探索欲，对于愿意折腾玩耍的人来说，不失为一个有意思的事情，但是如果想避坑，节约时间，还是希望先聚焦这5个能覆盖日常使用90%场景的插件，最大限度的发挥这几个插件的价值，可以让你快速形成记录的习惯，并稳步成长。</p>
+<p>当然，每个人的需求不同，应用场景也不同，这5个插件更多的可以帮助像我一样的普通用户，快速建立自己的知识库和系统。</p>
+<p>下面详细来看一下是哪几个插件。</p>
+<h2 id="1-homepage">1. Homepage<a hidden class="anchor" aria-hidden="true" href="#1-homepage">#</a></h2>
+<p>相信每个人都希望可以有一个美观好用的首页，因为首页就像是游乐场的一个大门，只有将大门打造的合理且有吸引力，才愿意走进去探索更多的东西。</p>
+<p>通过安装Homepage插件后可以设置，每次打开obsidian都先打开设定好的首页。这里分享一下我自己当前的一个首页。
+![[IMG-20260621223037999.png]]</p>
+<p>当前我的首页完全是基于自己的需求生长出来的，其实还远没有达到我自己期望的样子，但是一定要先固定下来，不要经常变动，聚焦有用的模块，待3个月或者半年再定期更新。</p>
+<p>更多的时间聚焦的输入和输出上，这个插件的作用就是让你每天可以有一个入口，入口放置你近期会频繁使用的模块。</p>
+<h2 id="2-templater">2. Templater<a hidden class="anchor" aria-hidden="true" href="#2-templater">#</a></h2>
+<p>这是模版插件，每个人都有自己的习惯，比如：日记记录习惯，周复盘习惯等，当你已经有了固定的日记模版和周复盘模版，你就再也不用每次要记录和复盘的时候，重新打开一个页面，然后复制粘贴格式到新的笔记中。</p>
+<p>尤其对于一些需要自动更新的时间或者别的内容，都可以定制化，形成一个固定的模版，每次就可以直接使用。比如：日记模版：</p>
+<pre tabindex="0"><code>日记：{{date}}
+
+今日工作：
+今日心情：
+今日生活：
+</code></pre><p>日常的日记和复盘都可以沉淀来下。</p>
+<p>对于日常工作和生活中，会用到模版的场景非常多，比叡：</p>
+<ul>
+<li>闪念记录</li>
+<li>日周月计划</li>
+<li>日周月复盘</li>
+<li>旅游计划</li>
+<li>英语听力模版</li>
+<li>英语写作模版</li>
+<li>&hellip; &hellip;
+我的人生系统会用到Templater的场景已有30+，相信不同的人会有 更多不同的需求应用场景，这也是为什么Templater插件这么受欢迎，基本是必备插件。</li>
+</ul>
+<h2 id="3-quickadd">3. QuickAdd<a hidden class="anchor" aria-hidden="true" href="#3-quickadd">#</a></h2>
+<p>这个插件应该说解决了记录低效记录的问题，在过去每次要记录都需要新建笔记，或者插入模版，效率非常低。但是这个插件直接秒开模版并开始记录。</p>
+<p>当你今天完成了一天的工作， 要开始写今天的日记的时候，你不需要像以前一样，去新建日记，也不用去插入日记模版，直接通过配置快捷方式，通过Command+P，打开如下页面，输入新建日记，就可以找到选项如下：</p>
+<p>![[IMG-20260621223038096.png]]</p>
+<p>点击之后就会新建一个今日日记的模版，瞬间开始撰写今日日记。中间减少了大脑多个思考和执行交付的环节，减少了大脑的负担。</p>
+<p>通过这个插件可以极大的较少大脑记录的摩擦，快速响应，直接进入记录状态。</p>
+<h2 id="4-dataview">4. Dataview<a hidden class="anchor" aria-hidden="true" href="#4-dataview">#</a></h2>
+<p>这个插件作用是汇总查询笔记形成一个表格的形式，需要用到类似一点点SQL语法，因此，会有一点点门槛，但是并不复杂，基本学习1小时就可以学会。一旦你学会使用dataview，你会发现，原来自己可以对自己的笔记这么有掌控力。</p>
+<p>每个人可以按照自己的想法去汇总所有笔记，只要你依据自己的想法，给每个笔记设计好属性，就可以依据属性字段，以任意维度进行查询甚至统计。</p>
+<pre tabindex="0"><code class="language-dataview-" data-lang="dataview-">table
+type,created
+from #日记
+limit 2
+</code></pre><p>渲染如下：</p>
+<p>![[IMG-20260621223038198.png]]</p>
+<p>以上就是查询日记的语法和渲染结果，如果希望更复杂的，还可以统计每日，每周，每月的笔记数量等各种统计结果。</p>
+<p>这也是在使用obsidian管理笔记过程中，必定要下载使用的插件，几乎没有之一。</p>
+<h2 id="5-kanban">5. Kanban<a hidden class="anchor" aria-hidden="true" href="#5-kanban">#</a></h2>
+<p>kanban插件是用来管理任务的插件，对于日常工作和生活管理，是一定离不开任务管理的，常用的任务管理坐标系分：</p>
+<ul>
+<li>重要紧急</li>
+<li>不重要紧急</li>
+<li>重要不紧急</li>
+<li>不重要不紧急
+我自己添加了一个固定周期提醒任务，在看板中，可以按照自己的需要，建立管理框架，如果作为日常普通管理，可以参考以上常用的任务管理分类，我就是参考以上标准建立如下：</li>
+</ul>
+<p>![[IMG-20260621223038583.png]]</p>
+<p>如果希望任务看板更好看，还可以对每个部分进行颜色设置等。</p>
+<h2 id="总结">总结<a hidden class="anchor" aria-hidden="true" href="#总结">#</a></h2>
+<p>希望还没折腾的人，先折腾这5个插件，它包含了首页体系框架、日常任务管理、日常习惯沉淀、工作流搭建，可视化数据监控分析等场景。可以帮你快速上手，节约更多时间，更快速的建立自己的管理体系。因为这5个插件应该会是你最经常要用到的插件，可能覆盖你90%的场景需要。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer mt-auto py-3 text-center">
+  <div>
+    <span>© 2026 西湖太极熊 · AI & obsidian</span>
+  </div>
+</footer></body>
+
+</html>

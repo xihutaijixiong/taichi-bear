@@ -1,0 +1,33 @@
+/* 仅首页生效，其他文章页保持正常阅读宽度 */
+body.home {
+    /* 清除浏览器默认body 8px左右margin */
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+/* 1. 暴力干掉PaperMod所有内层容器最大宽度+内边距 */
+body.home .main,
+body.home #content,
+body.home .page {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-inline: 0 !important;
+    margin-inline: 0 !important;
+}
+
+/* 2. 导航栏同步全屏贴边 */
+body.home .nav,
+body.home .nav-container {
+    max-width: 100% !important;
+    padding-inline: clamp(1rem, 3vw, 3rem) !important;
+}
+
+/* 3. 核心：负边距溢出，左右直接顶到屏幕边缘（解决左侧空白元凶） */
+body.home .home-full-bleed {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+    padding: 2rem clamp(1rem, 3vw, 3rem) !important;
+    box-sizing: border-box !important;
+}

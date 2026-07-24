@@ -1,0 +1,29 @@
+/* 首页彻底取消居中限制 */
+body.home .main {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body.home #content {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body.home .page {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* 防止浏览器默认滚动条影响计算 */
+html,
+body.home {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}

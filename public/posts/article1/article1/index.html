@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>我用 Obsidian 搭建了一个全球信息订阅系统 | 西湖太极熊</title>
+<meta name="keywords" content="">
+<meta name="description" content="用Obsidian搭建系统化的订阅输入和输出闭环，先要有一个全球订阅输入">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/posts/article1/article1/">
+<link crossorigin="anonymous" href="../../../assets/css/stylesheet.8d28b609a9b9fe056815a797e5dada54f9337ab991200c4b79f12e56ea1d9b9a.css" integrity="sha256-jSi2Cam5/gVoFaeX5draVPkzermRIAxLefEuVuodm5o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/posts/article1/article1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="西湖太极熊 (Alt + H)">西湖太极熊</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="//localhost:1313/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/cases/" title="案例">
+                    <span>案例</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/products/" title="产品">
+                    <span>产品</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts/" title="博客">
+                    <span>博客</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/resources/" title="资源">
+                    <span>资源</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      我用 Obsidian 搭建了一个全球信息订阅系统
+    </h1>
+    <div class="post-description">
+      用Obsidian搭建系统化的订阅输入和输出闭环，先要有一个全球订阅输入
+    </div>
+    <div class="post-meta">
+
+<span title='2026-07-22 10:00:00 +0800 CST'>July 22, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>在不断探索适合自己的Obsidian系统的过程中，一直坚持信息输入、信息处理、信息整合、信息输出的基础结构，很多人可能觉得最重要的是输出，但是没有输入，哪里来的输出。因此，我一直在不断地优化自己的输入系统。</p>
+<p>尝试过很多快速剪藏工具，浏览器收藏，或者人工输入信息等等各种方式，但用久之后会发现几个问题：</p>
+<ul>
+<li>信息渠道太分散</li>
+<li>很难持续跟踪某个创作者</li>
+<li>信息来源不稳定</li>
+<li>很多优质内容会被算法淹没</li>
+</ul>
+<p>尤其是一个很明显的问题：<strong>我的信息来源太局限在国内。</strong> 如果希望持续提升认知，其实需要接触更多 <strong>全球视角的信息来源</strong>。因此我开始重新梳理自己的信息输入需求。</p>
+<p>进一步分析梳理当前的信息输入需求，由于经过近几年的不断优化，现在坚定的通过obsidian打造最基础的自己的个人系统，因此，希望可以聚焦如下几个方向的信息输入，然后再延伸整理和输出，当前信息输入需求渠道如下：</p>
+<ul>
+<li>Reddit</li>
+<li>Threads</li>
+<li>YouTube</li>
+<li>&hellip; &hellip;</li>
+</ul>
+<p>因为，一直缺少海外渠道的信息输入，因此，希望可以建立一个全球视角的信息输入系统，然后发现可以满足此需求的插件是：RSS Dashboard。</p>
+<p>通过此插件可以按照Feed URL关注不同渠道的博主，一旦有更新可以随时看到，然后进行后续的学习和打标，可以更好的进行信息输入，信息学习消化，然后打标按照自己的计划进行整理输出。</p>
+<p>在使用RSS Dashboard以后发现，在Obsidian中进行定制化的订阅非常简单，一共分如下几个步骤：</p>
+<ol>
+<li>在插件市场下载RSS Dashboard</li>
+<li>通过打开你要的渠道如YouTube网页，右键打开源代码搜索channel_id=UChfo46ZNOV-vtehDc25A1Ug，复制对应的channel_id</li>
+<li>建立一个URL如：https://www.youtube.com/feeds/videos.xml?channel_id=UChfo46ZNOV-vtehDc25A1Ug</li>
+<li>然后点击RSS Dashboard，然后点击左侧导航的加号，打开Add Feed，在Feed URL中添加链接，然后填写Title标题，点击Load和Save即可。</li>
+</ol>
+<p><img alt="配图" loading="lazy" src="./img/pic1.png"></p>
+<p>在配置完成之后，如下图：</p>
+<p>![[03_Output/Articles/我用 Obsidian 搭建了一个全球信息订阅系统/插图2.png]]</p>
+<p>然后，当你开始逐个学习之后，可以进一步按照左侧导航栏已读和未读，或者按照需求进行打标签，都可以实现。</p>
+<p>通过以上配置，建立了自己的信息输入系统之后，每天学习和记录之后，进行笔记整理，逐步可以建立一个全球最前沿信息选题库，同时也可以结合自己的兴趣如英语学习，关注自己喜欢的Podcast，建立自己的听力素材库。</p>
+<p>很多人觉得知识管理是为了“存东西”。但在我看来更重要的是：<strong>建立持续的信息输入能力。</strong></p>
+<p>当输入足够稳定时：</p>
+<ul>
+<li>选题会越来越多</li>
+<li>观点会越来越清晰</li>
+<li>输出也会越来越轻松</li>
+</ul>
+<p>而 RSS Dashboard，其实就是我现在 <strong>最核心的信息输入工具之一</strong>。通过它，我正在慢慢建立一个：<strong>属于自己的全球信息订阅系统。</strong> 如果你也在使用 Obsidian，我非常建议你试试这个插件。因为当信息输入系统搭建好之后，很多事情都会变得简单很多。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer mt-auto py-3 text-center">
+  <div>
+    <span>© 2026 西湖太极熊 · AI & obsidian</span>
+  </div>
+</footer></body>
+
+</html>
