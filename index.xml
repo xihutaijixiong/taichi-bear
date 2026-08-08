@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>首页 on 西湖太极熊</title>
+    <link>https://xihutaijixiong.github.io/taichi-bear/</link>
+    <description>Recent content in 首页 on 西湖太极熊</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 07 Aug 2026 10:00:00 +0800</lastBuildDate>
+    <atom:link href="https://xihutaijixiong.github.io/taichi-bear/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>免费产品资源分享</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/resources/free-product-link/</link>
+      <pubDate>Fri, 07 Aug 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/resources/free-product-link/</guid>
+      <description>免费产品 · 资源导航</description>
+    </item>
+    <item>
+      <title>Career OS Lite - 免费领取</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/products/career-os-lite/</link>
+      <pubDate>Mon, 03 Aug 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/products/career-os-lite/</guid>
+      <description>把10年工作经验变成AI可识别的职业资产。基于AI的职业资产管理系统，帮助你整理过去经历、提炼核心能力，建立属于自己的职业数据库。</description>
+    </item>
+    <item>
+      <title>AI Company OS</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/cases/ai-company-os/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/cases/ai-company-os/</guid>
+      <description>探索如何利用 AI、知识管理和自动化工作流，构建个人级智能操作系统，将信息、经验和工作流程转化为长期资产。</description>
+    </item>
+    <item>
+      <title>AI Data Analysis Workflow</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/cases/ai-data-analysis-workflow/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/cases/ai-data-analysis-workflow/</guid>
+      <description>基于多年数据分析经验，探索如何将 AI 融入业务分析全过程，从问题拆解、指标设计、数据探索到洞察输出，打造 AI 增强型数据分析工作流。</description>
+    </item>
+    <item>
+      <title>AI Workflow Template（规划中）</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/products/ai-workflow-template/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/products/ai-workflow-template/</guid>
+      <description>正在构建的个人 AI 工作流模板库，将 AI Prompt、知识管理和自动化流程结合，帮助个人建立可复用的 AI 工作方式。</description>
+    </item>
+    <item>
+      <title>Career OS Template（规划中）</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/products/career-os-template/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/products/career-os-template/</guid>
+      <description>正在构建的个人职业发展管理系统，通过 AI、数据分析和知识管理方法，帮助个人系统管理岗位研究、技能成长、项目资产和职业机会。</description>
+    </item>
+    <item>
+      <title>Daily Report Skill v1.0 and Command</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/resources/day-report-skill-and-command/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/resources/day-report-skill-and-command/</guid>
+      <description>用AI来进行自动化日报总结</description>
+    </item>
+    <item>
+      <title>Data Analyst Case Library（规划中）</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/products/ai-data-analyst-case-library/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/products/ai-data-analyst-case-library/</guid>
+      <description>正在构建的数据分析案例库，通过真实业务场景、分析框架和 AI 辅助方法，帮助数据分析人员提升从数据到业务价值的能力。</description>
+    </item>
+    <item>
+      <title>Personal Knowledge System</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/cases/personal-knowledge-system/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/cases/personal-knowledge-system/</guid>
+      <description>探索如何结合 Obsidian、AI 和结构化思维，将碎片化信息转化为个人知识资产，并支持持续学习、内容创作和职业成长。</description>
+    </item>
+    <item>
+      <title>我用 Obsidian 搭建了一个全球信息订阅系统</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/posts/article1/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/posts/article1/</guid>
+      <description>用Obsidian搭建系统化的订阅输入和输出闭环，先要有一个全球订阅输入</description>
+    </item>
+    <item>
+      <title>新手别折腾了：这套 Obsidian &#43; DeepSeek 组合，便宜又能直接用</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/posts/article3/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/posts/article3/</guid>
+      <description>数据分析师如何用结构化思维拆解业务问题，INTJ视角的思考方式</description>
+    </item>
+    <item>
+      <title>折腾了一圈，最终90%的使用仅仅依赖这5个插件！</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/posts/article2/</link>
+      <pubDate>Tue, 21 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/posts/article2/</guid>
+      <description>obsidian高效使用覆盖大部分场景仅仅5个插件就够了</description>
+    </item>
+  </channel>
+</rss>

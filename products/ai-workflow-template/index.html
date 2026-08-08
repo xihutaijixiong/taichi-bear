@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI Workflow Template（规划中） | 西湖太极熊</title>
+<meta name="keywords" content="">
+<meta name="description" content="正在构建的个人 AI 工作流模板库，将 AI Prompt、知识管理和自动化流程结合，帮助个人建立可复用的 AI 工作方式。">
+<meta name="author" content="">
+<link rel="canonical" href="https://xihutaijixiong.github.io/taichi-bear/products/ai-workflow-template/">
+<link crossorigin="anonymous" href="../../taichi-bear/assets/css/stylesheet.8d28b609a9b9fe056815a797e5dada54f9337ab991200c4b79f12e56ea1d9b9a.css" integrity="sha256-jSi2Cam5/gVoFaeX5draVPkzermRIAxLefEuVuodm5o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xihutaijixiong.github.io/taichi-bear/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xihutaijixiong.github.io/taichi-bear/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xihutaijixiong.github.io/taichi-bear/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xihutaijixiong.github.io/taichi-bear/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xihutaijixiong.github.io/taichi-bear/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xihutaijixiong.github.io/taichi-bear/products/ai-workflow-template/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://xihutaijixiong.github.io/taichi-bear/products/ai-workflow-template/">
+  <meta property="og:site_name" content="西湖太极熊">
+  <meta property="og:title" content="AI Workflow Template（规划中）">
+  <meta property="og:description" content="正在构建的个人 AI 工作流模板库，将 AI Prompt、知识管理和自动化流程结合，帮助个人建立可复用的 AI 工作方式。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="products">
+    <meta property="article:published_time" content="2026-07-22T10:00:00+08:00">
+    <meta property="article:modified_time" content="2026-07-22T10:00:00+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI Workflow Template（规划中）">
+  <meta name="twitter:description" content="正在构建的个人 AI 工作流模板库，将 AI Prompt、知识管理和自动化流程结合，帮助个人建立可复用的 AI 工作方式。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "产品服务",
+      "item": "https://xihutaijixiong.github.io/taichi-bear/products/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "AI Workflow Template（规划中）",
+      "item": "https://xihutaijixiong.github.io/taichi-bear/products/ai-workflow-template/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI Workflow Template（规划中）",
+  "name": "AI Workflow Template（规划中）",
+  "description": "正在构建的个人 AI 工作流模板库，将 AI Prompt、知识管理和自动化流程结合，帮助个人建立可复用的 AI 工作方式。",
+  "keywords": [
+    
+  ],
+  "articleBody": "AI Workflow Template：个人 AI 工作流模板库 产品简介 随着 AI 工具快速发展，很多人开始使用 ChatGPT、Claude 等 AI 助手，但实际使用过程中仍然存在：\n不知道如何设计有效的 AI 工作流程\n每次使用 AI 都需要重新思考 Prompt\nAI 输出无法沉淀为长期资产\n工具很多，但没有形成稳定工作方式\n因此，我正在构建 AI Workflow Template（个人 AI 工作流模板库）。\n它不是简单的 Prompt 收集，而是一套围绕真实工作场景设计的：\nAI + Workflow + Knowledge Management 工作方式模板。\n帮助个人将 AI 从一个临时工具，转变为日常工作系统的一部分。\n产品目标 打造一个可复用的个人 AI 工作系统：\n任务需求 ↓ AI分析 ↓ 标准化流程 ↓ 模板执行 ↓ 结果输出 ↓ 持续优化 让 AI 使用从：\n临时提问\n转变为：\n固定流程。\n核心模块规划 01 AI Prompt Template AI 提示词模板库 目标：\n降低每次使用 AI 的思考成本。\n包含：\n工作类 Prompt 例如：\n需求分析 Prompt\n信息总结 Prompt\n报告生成 Prompt\n方案设计 Prompt\n学习类 Prompt 例如：\n概念理解模板\n学习计划生成模板\n知识整理模板\n内容类 Prompt 例如：\n文章选题模板\n内容结构模板\n多平台改写模板\n02 Information Processing Workflow 信息处理工作流 目标：\n将每天接触的信息转化为知识资产。\n流程：\n文章 / 视频 / 资料 ↓ AI快速理解 ↓ 提炼关键观点 ↓ 保存知识库 ↓ 形成个人知识 应用场景：\n阅读行业文章\n学习AI技术\n整理课程资料\n研究岗位信息\n03 Content Creation Workflow 内容生产工作流 目标：\n提高个人内容输出效率。\n流程：\n知识积累 ↓ 主题选择 ↓ AI辅助整理 ↓ 文章初稿 ↓ 人工优化 ↓ 发布 应用：\n微信公众号\nBlog\nYouTube\nNewsletter\n04 Data Analysis Workflow AI 数据分析工作流 目标：\n帮助数据分析人员提升分析效率。\n流程：\n业务问题 ↓ AI辅助拆解 ↓ 分析框架设计 ↓ SQL辅助 ↓ 数据解释 ↓ 报告输出 包含：\n分析框架模板\nSQL辅助模板\n数据洞察模板\n分析报告模板\n05 Career Workflow AI职业发展工作流 目标：\n帮助个人系统管理职业成长。\n流程：\n目标岗位 ↓ JD分析 ↓ 能力差距 ↓ 学习计划 ↓ 简历优化 ↓ 面试准备 包含：\nJD分析模板\nResume优化模板\nSTAR案例模板\n面试准备模板\n产品组成规划 未来可能包含：\nTemplate Pack 模板包：\nPrompt模板\nWorkflow模板\nObsidian模板\nKnowledge Base 知识库：\nAI使用方法\nWorkflow案例\n最佳实践\nUpdate 持续更新：\n新AI工具实践\n新工作流案例\n用户反馈优化\n适用人群 适合：\n知识工作者 希望：\n提高工作效率\n减少重复工作\n内容创作者 希望：\n稳定输出内容\n建立个人知识体系\n数据分析师 希望：\n探索AI增强分析能力\n提升职业竞争力\nAI学习者 希望：\n从工具使用进入工作流设计 当前状态 🚧 规划与建设中\n目前正在通过真实实践持续完善：\nAI Company OS\nAI Data Analysis Workflow\nPersonal Knowledge System\n未来将沉淀为：\n可复用的 AI Workflow Template 产品。\n未来版本规划 Version 1.0 基础模板：\nPrompt模板\n信息处理流程\n内容生产流程\nVersion 2.0 增强系统：\nObsidian模板\nAI Agent流程\n自动化连接\nVersion 3.0 产品化：\n行业Workflow\n数据分析Workflow\n职业发展Workflow\n",
+  "wordCount" : "272",
+  "inLanguage": "en",
+  "datePublished": "2026-07-22T10:00:00+08:00",
+  "dateModified": "2026-07-22T10:00:00+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xihutaijixiong.github.io/taichi-bear/products/ai-workflow-template/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "西湖太极熊",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xihutaijixiong.github.io/taichi-bear/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://xihutaijixiong.github.io/taichi-bear/" accesskey="h" title="西湖太极熊 (Alt + H)">西湖太极熊</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/cases/" title="案例">
+                    <span>案例</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/products/" title="产品">
+                    <span>产品</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/posts/" title="博客">
+                    <span>博客</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/resources/" title="资源">
+                    <span>资源</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      AI Workflow Template（规划中）
+    </h1>
+    <div class="post-description">
+      正在构建的个人 AI 工作流模板库，将 AI Prompt、知识管理和自动化流程结合，帮助个人建立可复用的 AI 工作方式。
+    </div>
+    <div class="post-meta">
+
+<span title='2026-07-22 10:00:00 +0800 CST'>July 22, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h1 id="ai-workflow-template个人-ai-工作流模板库">AI Workflow Template：个人 AI 工作流模板库<a hidden class="anchor" aria-hidden="true" href="#ai-workflow-template个人-ai-工作流模板库">#</a></h1>
+<h2 id="产品简介">产品简介<a hidden class="anchor" aria-hidden="true" href="#产品简介">#</a></h2>
+<p>随着 AI 工具快速发展，很多人开始使用 ChatGPT、Claude 等 AI 助手，但实际使用过程中仍然存在：</p>
+<ul>
+<li>
+<p>不知道如何设计有效的 AI 工作流程</p>
+</li>
+<li>
+<p>每次使用 AI 都需要重新思考 Prompt</p>
+</li>
+<li>
+<p>AI 输出无法沉淀为长期资产</p>
+</li>
+<li>
+<p>工具很多，但没有形成稳定工作方式</p>
+</li>
+</ul>
+<p>因此，我正在构建 <strong>AI Workflow Template（个人 AI 工作流模板库）</strong>。</p>
+<p>它不是简单的 Prompt 收集，而是一套围绕真实工作场景设计的：</p>
+<blockquote>
+<p>AI + Workflow + Knowledge Management 工作方式模板。</p>
+</blockquote>
+<p>帮助个人将 AI 从一个临时工具，转变为日常工作系统的一部分。</p>
+<hr>
+<h1 id="产品目标">产品目标<a hidden class="anchor" aria-hidden="true" href="#产品目标">#</a></h1>
+<p>打造一个可复用的个人 AI 工作系统：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>任务需求
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>AI分析
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>标准化流程
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>模板执行
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>结果输出
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>持续优化
+</span></span></code></pre></div><p>让 AI 使用从：</p>
+<blockquote>
+<p>临时提问</p>
+</blockquote>
+<p>转变为：</p>
+<blockquote>
+<p>固定流程。</p>
+</blockquote>
+<hr>
+<h1 id="核心模块规划">核心模块规划<a hidden class="anchor" aria-hidden="true" href="#核心模块规划">#</a></h1>
+<h2 id="01-ai-prompt-template">01 AI Prompt Template<a hidden class="anchor" aria-hidden="true" href="#01-ai-prompt-template">#</a></h2>
+<h3 id="ai-提示词模板库">AI 提示词模板库<a hidden class="anchor" aria-hidden="true" href="#ai-提示词模板库">#</a></h3>
+<p>目标：</p>
+<p>降低每次使用 AI 的思考成本。</p>
+<p>包含：</p>
+<h2 id="工作类-prompt">工作类 Prompt<a hidden class="anchor" aria-hidden="true" href="#工作类-prompt">#</a></h2>
+<p>例如：</p>
+<ul>
+<li>
+<p>需求分析 Prompt</p>
+</li>
+<li>
+<p>信息总结 Prompt</p>
+</li>
+<li>
+<p>报告生成 Prompt</p>
+</li>
+<li>
+<p>方案设计 Prompt</p>
+</li>
+</ul>
+<h2 id="学习类-prompt">学习类 Prompt<a hidden class="anchor" aria-hidden="true" href="#学习类-prompt">#</a></h2>
+<p>例如：</p>
+<ul>
+<li>
+<p>概念理解模板</p>
+</li>
+<li>
+<p>学习计划生成模板</p>
+</li>
+<li>
+<p>知识整理模板</p>
+</li>
+</ul>
+<h2 id="内容类-prompt">内容类 Prompt<a hidden class="anchor" aria-hidden="true" href="#内容类-prompt">#</a></h2>
+<p>例如：</p>
+<ul>
+<li>
+<p>文章选题模板</p>
+</li>
+<li>
+<p>内容结构模板</p>
+</li>
+<li>
+<p>多平台改写模板</p>
+</li>
+</ul>
+<hr>
+<h1 id="02-information-processing-workflow">02 Information Processing Workflow<a hidden class="anchor" aria-hidden="true" href="#02-information-processing-workflow">#</a></h1>
+<h3 id="信息处理工作流">信息处理工作流<a hidden class="anchor" aria-hidden="true" href="#信息处理工作流">#</a></h3>
+<p>目标：</p>
+<p>将每天接触的信息转化为知识资产。</p>
+<p>流程：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>文章 / 视频 / 资料
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>AI快速理解
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>提炼关键观点
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>保存知识库
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>形成个人知识
+</span></span></code></pre></div><p>应用场景：</p>
+<ul>
+<li>
+<p>阅读行业文章</p>
+</li>
+<li>
+<p>学习AI技术</p>
+</li>
+<li>
+<p>整理课程资料</p>
+</li>
+<li>
+<p>研究岗位信息</p>
+</li>
+</ul>
+<hr>
+<h1 id="03-content-creation-workflow">03 Content Creation Workflow<a hidden class="anchor" aria-hidden="true" href="#03-content-creation-workflow">#</a></h1>
+<h3 id="内容生产工作流">内容生产工作流<a hidden class="anchor" aria-hidden="true" href="#内容生产工作流">#</a></h3>
+<p>目标：</p>
+<p>提高个人内容输出效率。</p>
+<p>流程：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>知识积累
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>主题选择
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>AI辅助整理
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>文章初稿
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>人工优化
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>发布
+</span></span></code></pre></div><p>应用：</p>
+<ul>
+<li>
+<p>微信公众号</p>
+</li>
+<li>
+<p>Blog</p>
+</li>
+<li>
+<p>YouTube</p>
+</li>
+<li>
+<p>Newsletter</p>
+</li>
+</ul>
+<hr>
+<h1 id="04-data-analysis-workflow">04 Data Analysis Workflow<a hidden class="anchor" aria-hidden="true" href="#04-data-analysis-workflow">#</a></h1>
+<h3 id="ai-数据分析工作流">AI 数据分析工作流<a hidden class="anchor" aria-hidden="true" href="#ai-数据分析工作流">#</a></h3>
+<p>目标：</p>
+<p>帮助数据分析人员提升分析效率。</p>
+<p>流程：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>业务问题
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>AI辅助拆解
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>分析框架设计
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>SQL辅助
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据解释
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>报告输出
+</span></span></code></pre></div><p>包含：</p>
+<ul>
+<li>
+<p>分析框架模板</p>
+</li>
+<li>
+<p>SQL辅助模板</p>
+</li>
+<li>
+<p>数据洞察模板</p>
+</li>
+<li>
+<p>分析报告模板</p>
+</li>
+</ul>
+<hr>
+<h1 id="05-career-workflow">05 Career Workflow<a hidden class="anchor" aria-hidden="true" href="#05-career-workflow">#</a></h1>
+<h3 id="ai职业发展工作流">AI职业发展工作流<a hidden class="anchor" aria-hidden="true" href="#ai职业发展工作流">#</a></h3>
+<p>目标：</p>
+<p>帮助个人系统管理职业成长。</p>
+<p>流程：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>目标岗位
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>JD分析
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>能力差距
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>学习计划
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>简历优化
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>↓
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>面试准备
+</span></span></code></pre></div><p>包含：</p>
+<ul>
+<li>
+<p>JD分析模板</p>
+</li>
+<li>
+<p>Resume优化模板</p>
+</li>
+<li>
+<p>STAR案例模板</p>
+</li>
+<li>
+<p>面试准备模板</p>
+</li>
+</ul>
+<hr>
+<h1 id="产品组成规划">产品组成规划<a hidden class="anchor" aria-hidden="true" href="#产品组成规划">#</a></h1>
+<p>未来可能包含：</p>
+<h2 id="template-pack">Template Pack<a hidden class="anchor" aria-hidden="true" href="#template-pack">#</a></h2>
+<p>模板包：</p>
+<ul>
+<li>
+<p>Prompt模板</p>
+</li>
+<li>
+<p>Workflow模板</p>
+</li>
+<li>
+<p>Obsidian模板</p>
+</li>
+</ul>
+<hr>
+<h2 id="knowledge-base">Knowledge Base<a hidden class="anchor" aria-hidden="true" href="#knowledge-base">#</a></h2>
+<p>知识库：</p>
+<ul>
+<li>
+<p>AI使用方法</p>
+</li>
+<li>
+<p>Workflow案例</p>
+</li>
+<li>
+<p>最佳实践</p>
+</li>
+</ul>
+<hr>
+<h2 id="update">Update<a hidden class="anchor" aria-hidden="true" href="#update">#</a></h2>
+<p>持续更新：</p>
+<ul>
+<li>
+<p>新AI工具实践</p>
+</li>
+<li>
+<p>新工作流案例</p>
+</li>
+<li>
+<p>用户反馈优化</p>
+</li>
+</ul>
+<hr>
+<h1 id="适用人群">适用人群<a hidden class="anchor" aria-hidden="true" href="#适用人群">#</a></h1>
+<p>适合：</p>
+<h2 id="知识工作者">知识工作者<a hidden class="anchor" aria-hidden="true" href="#知识工作者">#</a></h2>
+<p>希望：</p>
+<ul>
+<li>
+<p>提高工作效率</p>
+</li>
+<li>
+<p>减少重复工作</p>
+</li>
+</ul>
+<hr>
+<h2 id="内容创作者">内容创作者<a hidden class="anchor" aria-hidden="true" href="#内容创作者">#</a></h2>
+<p>希望：</p>
+<ul>
+<li>
+<p>稳定输出内容</p>
+</li>
+<li>
+<p>建立个人知识体系</p>
+</li>
+</ul>
+<hr>
+<h2 id="数据分析师">数据分析师<a hidden class="anchor" aria-hidden="true" href="#数据分析师">#</a></h2>
+<p>希望：</p>
+<ul>
+<li>
+<p>探索AI增强分析能力</p>
+</li>
+<li>
+<p>提升职业竞争力</p>
+</li>
+</ul>
+<hr>
+<h2 id="ai学习者">AI学习者<a hidden class="anchor" aria-hidden="true" href="#ai学习者">#</a></h2>
+<p>希望：</p>
+<ul>
+<li>从工具使用进入工作流设计</li>
+</ul>
+<hr>
+<h1 id="当前状态">当前状态<a hidden class="anchor" aria-hidden="true" href="#当前状态">#</a></h1>
+<p>🚧 <strong>规划与建设中</strong></p>
+<p>目前正在通过真实实践持续完善：</p>
+<ul>
+<li>
+<p>AI Company OS</p>
+</li>
+<li>
+<p>AI Data Analysis Workflow</p>
+</li>
+<li>
+<p>Personal Knowledge System</p>
+</li>
+</ul>
+<p>未来将沉淀为：</p>
+<p>可复用的 AI Workflow Template 产品。</p>
+<hr>
+<h1 id="未来版本规划">未来版本规划<a hidden class="anchor" aria-hidden="true" href="#未来版本规划">#</a></h1>
+<h2 id="version-10">Version 1.0<a hidden class="anchor" aria-hidden="true" href="#version-10">#</a></h2>
+<p>基础模板：</p>
+<ul>
+<li>
+<p>Prompt模板</p>
+</li>
+<li>
+<p>信息处理流程</p>
+</li>
+<li>
+<p>内容生产流程</p>
+</li>
+</ul>
+<h2 id="version-20">Version 2.0<a hidden class="anchor" aria-hidden="true" href="#version-20">#</a></h2>
+<p>增强系统：</p>
+<ul>
+<li>
+<p>Obsidian模板</p>
+</li>
+<li>
+<p>AI Agent流程</p>
+</li>
+<li>
+<p>自动化连接</p>
+</li>
+</ul>
+<h2 id="version-30">Version 3.0<a hidden class="anchor" aria-hidden="true" href="#version-30">#</a></h2>
+<p>产品化：</p>
+<ul>
+<li>
+<p>行业Workflow</p>
+</li>
+<li>
+<p>数据分析Workflow</p>
+</li>
+<li>
+<p>职业发展Workflow</p>
+</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer mt-auto py-3 text-center">
+  <div>
+    <span>© 2026 西湖太极熊 · AI & obsidian</span>
+  </div>
+</footer></body>
+
+</html>
