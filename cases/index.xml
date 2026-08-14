@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>案例展示 on 西湖太极熊</title>
+    <link>https://xihutaijixiong.github.io/taichi-bear/cases/</link>
+    <description>Recent content in 案例展示 on 西湖太极熊</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 22 Jul 2026 10:00:00 +0800</lastBuildDate>
+    <atom:link href="https://xihutaijixiong.github.io/taichi-bear/cases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Company OS</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/cases/ai-company-os/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/cases/ai-company-os/</guid>
+      <description>探索如何利用 AI、知识管理和自动化工作流，构建个人级智能操作系统，将信息、经验和工作流程转化为长期资产。</description>
+    </item>
+    <item>
+      <title>AI Data Analysis Workflow</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/cases/ai-data-analysis-workflow/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/cases/ai-data-analysis-workflow/</guid>
+      <description>基于多年数据分析经验，探索如何将 AI 融入业务分析全过程，从问题拆解、指标设计、数据探索到洞察输出，打造 AI 增强型数据分析工作流。</description>
+    </item>
+    <item>
+      <title>Personal Knowledge System</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/cases/personal-knowledge-system/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/cases/personal-knowledge-system/</guid>
+      <description>探索如何结合 Obsidian、AI 和结构化思维，将碎片化信息转化为个人知识资产，并支持持续学习、内容创作和职业成长。</description>
+    </item>
+  </channel>
+</rss>

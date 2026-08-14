@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>案例展示 | 西湖太极熊</title>
+<meta name="keywords" content="">
+<meta name="description" content="案例展示 - 西湖太极熊">
+<meta name="author" content="">
+<link rel="canonical" href="https://xihutaijixiong.github.io/taichi-bear/cases/">
+<link crossorigin="anonymous" href="../taichi-bear/assets/css/stylesheet.8d28b609a9b9fe056815a797e5dada54f9337ab991200c4b79f12e56ea1d9b9a.css" integrity="sha256-jSi2Cam5/gVoFaeX5draVPkzermRIAxLefEuVuodm5o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xihutaijixiong.github.io/taichi-bear/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xihutaijixiong.github.io/taichi-bear/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xihutaijixiong.github.io/taichi-bear/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xihutaijixiong.github.io/taichi-bear/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xihutaijixiong.github.io/taichi-bear/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://xihutaijixiong.github.io/taichi-bear/cases/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://xihutaijixiong.github.io/taichi-bear/cases/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://xihutaijixiong.github.io/taichi-bear/cases/">
+  <meta property="og:site_name" content="西湖太极熊">
+  <meta property="og:title" content="案例展示">
+  <meta property="og:description" content="INTJ思维 · 深度洞察 · 创新解决方案">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="案例展示">
+  <meta name="twitter:description" content="INTJ思维 · 深度洞察 · 创新解决方案">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "案例展示",
+      "item": "https://xihutaijixiong.github.io/taichi-bear/cases/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://xihutaijixiong.github.io/taichi-bear/" accesskey="h" title="西湖太极熊 (Alt + H)">西湖太极熊</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/cases/" title="案例">
+                    <span class="active">案例</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/products/" title="产品">
+                    <span>产品</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/posts/" title="博客">
+                    <span>博客</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/resources/" title="资源">
+                    <span>资源</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    案例展示
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Company OS
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>AI Company OS：构建个人级 AI 工作与决策系统 案例简介 随着 AI 工具快速发展，个人面临的问题已经从“有没有工具”变成：
+如何管理越来越多的信息？
+如何让 AI 真正融入日常工作？
+如何将经验沉淀为长期资产？
+如何提高学习、工作和内容创造效率？
+基于多年数据分析、业务分析和知识管理实践，我尝试构建一个属于个人的 AI Operating System（AI 操作系统），将 AI、知识管理、数据分析和自动化工作流结合，打造一个持续迭代的个人生产系统。
+背景：从工具使用到系统构建 过去：
+收集信息 ↓ 保存资料 ↓ 学习工具 ↓ 重复搜索 ↓ 经验流失 问题：
+信息越来越多，但无法形成知识
+学习很多工具，但没有形成工作流
+AI使用停留在临时问答
+经验无法复用
+因此，我希望建立：
+输入信息 ↓ AI处理 ↓ 知识沉淀 ↓ 经验复用 ↓ 内容输出 ↓ 持续优化 解决方案：AI Company OS 架构 AI Company OS 将个人看作一家小型企业，通过不同模块管理个人资产。
+整体架构：
+AI Company OS | ------------------------------------------------ | | | | 知识系统 工作系统 职业系统 内容系统 | AI Layer | AI Agent / Workflow 核心模块 01 Knowledge OS（知识操作系统） 目标 建立个人长期知识资产库。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-07-22 10:00:00 +0800 CST'>July 22, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to AI Company OS" href="https://xihutaijixiong.github.io/taichi-bear/cases/ai-company-os/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Data Analysis Workflow
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>AI Data Analysis Workflow：探索 AI 增强数据分析流程 案例简介 在过去十多年数据分析工作中，我参与过物流、电商、互联网平台、金融风控等业务场景的数据分析与决策支持。
+随着 AI 技术的发展，数据分析师的工作方式正在发生变化。
+未来的数据分析不只是：
+查询数据 → 制作报表 → 输出结论
+而是：
+理解业务 → 设计分析框架 → 利用 AI 提升分析效率 → 形成可执行洞察
+基于自身数据分析实践，我探索建立一套 AI Data Analysis Workflow，将 AI 融入数据分析全过程，提高问题拆解、数据探索、分析产出和业务沟通效率。
+背景：传统数据分析流程的挑战 传统数据分析通常面临：
+1. 分析需求不明确 业务提出：
+“帮我看看最近销售为什么下降？”
+但真正的问题可能是：
+哪些渠道下降？
+哪些用户下降？
+哪些商品下降？
+是流量问题还是转化问题？
+2. 分析过程重复 大量时间消耗在：
+查询历史资料
+编写基础SQL
+整理分析框架
+制作报告
+修改表达方式
+3. 数据结果难以转化为业务行动 很多分析停留：
+数据：
+GMV下降20%
+但是业务需要：
+为什么下降？
+应该做什么？
+解决方案：AI增强数据分析工作流 整体流程：
+业务问题 ↓ AI辅助问题拆解 ↓ 分析框架设计 ↓ 数据获取与验证 ↓ AI辅助洞察发现 ↓ 分析报告生成 ↓ 业务决策支持 核心流程 01 Business Understanding 业务问题理解与拆解 目标：
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-07-22 10:00:00 +0800 CST'>July 22, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to AI Data Analysis Workflow" href="https://xihutaijixiong.github.io/taichi-bear/cases/ai-data-analysis-workflow/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Personal Knowledge System
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Personal Knowledge System：构建个人知识资产体系 案例简介 在信息爆炸时代，获取信息已经越来越容易，但真正困难的是：
+如何管理大量信息？
+如何形成自己的理解？
+如何将经验转化为知识？
+如何持续输出有价值的内容？
+过去几年，我持续探索个人知识管理方法，尝试结合：
+Obsidian
+Markdown
+AI工具
+结构化思维
+内容生产流程
+建立一个属于自己的 Personal Knowledge System（个人知识系统）。
+目标不是简单收藏资料，而是：
+将碎片化信息转化为可连接、可复用、可创造价值的个人知识资产。
+背景：从信息管理到知识创造 传统信息管理方式 很多人的信息流：
+看到文章 ↓ 收藏 ↓ 保存链接 ↓ 以后再看 ↓ 最终遗忘 问题：
+收藏越来越多
+知识无法连接
+很难形成自己的观点
+无法支持长期成长
+我的探索方向 将流程改变为：
+信息输入 ↓ AI辅助处理 ↓ 知识整理 ↓ 观点形成 ↓ 内容输出 ↓ 持续迭代 从：
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-07-22 10:00:00 +0800 CST'>July 22, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to Personal Knowledge System" href="https://xihutaijixiong.github.io/taichi-bear/cases/personal-knowledge-system/"></a>
+</article>
+    </main>
+    <footer class="footer mt-auto py-3 text-center">
+  <div>
+    <span>© 2026 西湖太极熊 · AI & obsidian</span>
+  </div>
+</footer></body>
+
+</html>

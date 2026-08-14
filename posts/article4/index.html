@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Obsidian的两种可视化对比，你喜欢哪种？ | 西湖太极熊</title>
+<meta name="keywords" content="">
+<meta name="description" content="常用的两种obsidian可视化方法对比介绍，看你适合哪一种？">
+<meta name="author" content="">
+<link rel="canonical" href="https://xihutaijixiong.github.io/taichi-bear/posts/article4/">
+<link crossorigin="anonymous" href="../../taichi-bear/assets/css/stylesheet.8d28b609a9b9fe056815a797e5dada54f9337ab991200c4b79f12e56ea1d9b9a.css" integrity="sha256-jSi2Cam5/gVoFaeX5draVPkzermRIAxLefEuVuodm5o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xihutaijixiong.github.io/taichi-bear/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xihutaijixiong.github.io/taichi-bear/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xihutaijixiong.github.io/taichi-bear/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xihutaijixiong.github.io/taichi-bear/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xihutaijixiong.github.io/taichi-bear/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xihutaijixiong.github.io/taichi-bear/posts/article4/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://xihutaijixiong.github.io/taichi-bear/posts/article4/">
+  <meta property="og:site_name" content="西湖太极熊">
+  <meta property="og:title" content="Obsidian的两种可视化对比，你喜欢哪种？">
+  <meta property="og:description" content="常用的两种obsidian可视化方法对比介绍，看你适合哪一种？">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-06T00:00:00+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Obsidian的两种可视化对比，你喜欢哪种？">
+  <meta name="twitter:description" content="常用的两种obsidian可视化方法对比介绍，看你适合哪一种？">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "博客随笔",
+      "item": "https://xihutaijixiong.github.io/taichi-bear/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Obsidian的两种可视化对比，你喜欢哪种？",
+      "item": "https://xihutaijixiong.github.io/taichi-bear/posts/article4/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Obsidian的两种可视化对比，你喜欢哪种？",
+  "name": "Obsidian的两种可视化对比，你喜欢哪种？",
+  "description": "常用的两种obsidian可视化方法对比介绍，看你适合哪一种？",
+  "keywords": [
+    
+  ],
+  "articleBody": "Obsidian的可视化不像Notion，只要填写或者导入数据，就可以自动化的快速生成各种饼图、折线图，甚至进行多维度的过滤和分组透视。\n虽然Obsidian无法自动化的直接达成可视化的效果，但是他同样有自己的优势，只要在记录笔记的时候，对于设定的属性有记录数据，就可以通过插件或者代码，非常快速方便的生成可视化的图表。\n今天就来分享一下，Obsidian最简单方便，也是最常用的两种可视化的方法，进行对比，看你最喜欢哪一种可视化的表达方式。\n方式1： Tracker插件 直接在插件市场里面，下载Tracker插件，然后在新建笔记的时候，建立属性如下：\nlast_update: 2026-03-24 weight: 75.3 每天记录数据之后，通过如下代码：\nsearchType: frontmatter searchTarget: last_update,weight xDataset: 0 folder: 004存档/生活/健康 line: title: Weight Log yAxisLabel: Weight yAxisUnit: kg lineColor: blue searchType:查询方式（frontmatter属性） searchTarget：查询目标字段（last_update，weight） xDataset：x轴从0开始 folder：文件夹路径 line：折线图 title：标题 yAxisLabel：y轴标签 yAxisUnit：y轴单位 lineColor：折线颜色 图形渲染如下： 整体代码语法比较简单，只要记录，就可以随时自动生成图表。 缺点：图形不够美观\n方式2：dataview插件+charts插件 可能很多人觉得插件dataview主要是用来生成表格的，其实它还有很多拓展功能，通过dataviewjs的方式，结合charts插件，可以实现自动化加可视化图表生成。\n同样是建立属性如下：\nlast_update: 2026-03-24 weight: 75.3 每天记录数据之后，通过如下代码：\n// 读取数据 let pages = dv.pages('\"004存档/生活/健康\"') .where(p =\u003e p.weight \u0026\u0026 p.last_update) .sort(p =\u003e p.last_update); // 转换数据 let labels = pages.map(p =\u003e p.last_update.toFormat(\"yyyy-MM-dd\")); let data = pages.map(p =\u003e p.weight); // 生成 chart 代码块 let chartCode = ` \\`\\`\\`chart type: line labels: [${labels.join(\",\")}] series: - title: Weight data: [${data.join(\",\")}] \\`\\`\\` `; // 输出 dv.paragraph(chartCode); 通过dataviewjs进行数据提取和转换，然后通过chart进行可视化实现，渲染如下： 以上图形比起Tracker图形明显会好看很多，但是缺点是代码语法相对复杂很多。 虽然语法相对复杂，其实只要针对这个语法进行字段变更，就可以套用到所有的场景字段中，实现以上可视化。\n未来有时间可以再进一步进行dashboard迭代优化，后续逐步建立一个更美观的监控面板。\n总结\n以上两种可视化的监控图表可视化方式，各有优越点：\nTracker:\n优点：语法简单，学习成本低 缺点：图形可拓展性弱，不够美观 Dataviewjs: 优点：美观，可拓展性强，可以进一步拓展成更美观的dashboard 缺点：语法理解相对更难一点，但是可以直接套用上述语法，更改字段即可 建议当你刚开始学习的时候，可以尝试先通过Tracker的方式来沉淀你的监控系统和指标，当你觉得美观不够，又有时间折腾的时候，不妨尝试dataviewjs+charts的方式进行优化，让自己的笔记图表更美观。\n不知道大家的可视化是使用的哪种方式，或者是否还有别的更好的可视化方法，期待评论区分享你的选择！\n",
+  "wordCount" : "115",
+  "inLanguage": "en",
+  "datePublished": "2026-04-06T00:00:00Z",
+  "dateModified": "2026-04-06T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xihutaijixiong.github.io/taichi-bear/posts/article4/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "西湖太极熊",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xihutaijixiong.github.io/taichi-bear/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://xihutaijixiong.github.io/taichi-bear/" accesskey="h" title="西湖太极熊 (Alt + H)">西湖太极熊</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/cases/" title="案例">
+                    <span>案例</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/products/" title="产品">
+                    <span>产品</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/posts/" title="博客">
+                    <span>博客</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/resources/" title="资源">
+                    <span>资源</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Obsidian的两种可视化对比，你喜欢哪种？
+    </h1>
+    <div class="post-description">
+      常用的两种obsidian可视化方法对比介绍，看你适合哪一种？
+    </div>
+    <div class="post-meta">
+
+<span title='2026-04-06 00:00:00 +0000 UTC'>April 6, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>Obsidian的可视化不像Notion，只要填写或者导入数据，就可以自动化的快速生成各种饼图、折线图，甚至进行多维度的过滤和分组透视。</p>
+<p>虽然Obsidian无法自动化的直接达成可视化的效果，但是他同样有自己的优势，只要在记录笔记的时候，对于设定的属性有记录数据，就可以通过插件或者代码，非常快速方便的生成可视化的图表。</p>
+<p>今天就来分享一下，Obsidian最简单方便，也是最常用的两种可视化的方法，进行对比，看你最喜欢哪一种可视化的表达方式。</p>
+<h2 id="方式1-tracker插件">方式1： Tracker插件<a hidden class="anchor" aria-hidden="true" href="#方式1-tracker插件">#</a></h2>
+<p>直接在插件市场里面，下载Tracker插件，然后在新建笔记的时候，建立属性如下：</p>
+<pre tabindex="0"><code>last_update: 2026-03-24
+weight: 75.3
+</code></pre><p>每天记录数据之后，通过如下代码：</p>
+<pre tabindex="0"><code class="language-tracker-" data-lang="tracker-">searchType: frontmatter
+searchTarget: last_update,weight
+xDataset: 0
+folder: 004存档/生活/健康
+line:
+    title: Weight Log
+    yAxisLabel: Weight
+    yAxisUnit: kg
+    lineColor: blue
+</code></pre><ul>
+<li>searchType:查询方式（frontmatter属性）</li>
+<li>searchTarget：查询目标字段（last_update，weight）</li>
+<li>xDataset：x轴从0开始</li>
+<li>folder：文件夹路径</li>
+<li>line：折线图</li>
+<li>title：标题</li>
+<li>yAxisLabel：y轴标签</li>
+<li>yAxisUnit：y轴单位</li>
+<li>lineColor：折线颜色</li>
+</ul>
+<p>图形渲染如下：
+<img alt="配图" loading="lazy" src="../../taichi-bear/posts/article4/img/%E6%8F%92%E5%9B%BE1.png"></p>
+<p>整体代码语法比较简单，只要记录，就可以随时自动生成图表。
+缺点：图形不够美观</p>
+<h2 id="方式2dataview插件charts插件">方式2：dataview插件+charts插件<a hidden class="anchor" aria-hidden="true" href="#方式2dataview插件charts插件">#</a></h2>
+<p>可能很多人觉得插件dataview主要是用来生成表格的，其实它还有很多拓展功能，通过dataviewjs的方式，结合charts插件，可以实现自动化加可视化图表生成。</p>
+<p>同样是建立属性如下：</p>
+<pre tabindex="0"><code>last_update: 2026-03-24
+weight: 75.3
+</code></pre><p>每天记录数据之后，通过如下代码：</p>
+<pre tabindex="0"><code class="language-dataviewjs-" data-lang="dataviewjs-">// 读取数据
+let pages = dv.pages(&#39;&#34;004存档/生活/健康&#34;&#39;)
+  .where(p =&gt; p.weight &amp;&amp; p.last_update)
+  .sort(p =&gt; p.last_update);
+
+// 转换数据
+let labels = pages.map(p =&gt; p.last_update.toFormat(&#34;yyyy-MM-dd&#34;));
+let data = pages.map(p =&gt; p.weight);
+
+// 生成 chart 代码块
+let chartCode = `
+\`\`\`chart
+type: line
+labels: [${labels.join(&#34;,&#34;)}]
+series:
+  - title: Weight
+    data: [${data.join(&#34;,&#34;)}]
+\`\`\`
+`;
+
+// 输出
+dv.paragraph(chartCode);
+</code></pre><p>通过dataviewjs进行数据提取和转换，然后通过chart进行可视化实现，渲染如下：
+<img alt="配图" loading="lazy" src="../../taichi-bear/posts/article4/img/%E6%8F%92%E5%9B%BE2.png"></p>
+<p>以上图形比起Tracker图形明显会好看很多，但是缺点是代码语法相对复杂很多。
+虽然语法相对复杂，其实只要针对这个语法进行字段变更，就可以套用到所有的场景字段中，实现以上可视化。</p>
+<p>未来有时间可以再进一步进行dashboard迭代优化，后续逐步建立一个更美观的监控面板。</p>
+<p>总结</p>
+<p>以上两种可视化的监控图表可视化方式，各有优越点：</p>
+<p>Tracker:</p>
+<ul>
+<li>优点：语法简单，学习成本低</li>
+<li>缺点：图形可拓展性弱，不够美观
+Dataviewjs:</li>
+<li>优点：美观，可拓展性强，可以进一步拓展成更美观的dashboard</li>
+<li>缺点：语法理解相对更难一点，但是可以直接套用上述语法，更改字段即可</li>
+</ul>
+<p>建议当你刚开始学习的时候，可以尝试先通过Tracker的方式来沉淀你的监控系统和指标，当你觉得美观不够，又有时间折腾的时候，不妨尝试dataviewjs+charts的方式进行优化，让自己的笔记图表更美观。</p>
+<p>不知道大家的可视化是使用的哪种方式，或者是否还有别的更好的可视化方法，期待评论区分享你的选择！</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer mt-auto py-3 text-center">
+  <div>
+    <span>© 2026 西湖太极熊 · AI & obsidian</span>
+  </div>
+</footer></body>
+
+</html>

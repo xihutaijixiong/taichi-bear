@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>博客随笔 | 西湖太极熊</title>
+<meta name="keywords" content="">
+<meta name="description" content="博客随笔 - 西湖太极熊">
+<meta name="author" content="">
+<link rel="canonical" href="https://xihutaijixiong.github.io/taichi-bear/posts/">
+<link crossorigin="anonymous" href="../taichi-bear/assets/css/stylesheet.8d28b609a9b9fe056815a797e5dada54f9337ab991200c4b79f12e56ea1d9b9a.css" integrity="sha256-jSi2Cam5/gVoFaeX5draVPkzermRIAxLefEuVuodm5o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xihutaijixiong.github.io/taichi-bear/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xihutaijixiong.github.io/taichi-bear/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xihutaijixiong.github.io/taichi-bear/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xihutaijixiong.github.io/taichi-bear/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xihutaijixiong.github.io/taichi-bear/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://xihutaijixiong.github.io/taichi-bear/posts/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://xihutaijixiong.github.io/taichi-bear/posts/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://xihutaijixiong.github.io/taichi-bear/posts/">
+  <meta property="og:site_name" content="西湖太极熊">
+  <meta property="og:title" content="博客随笔">
+  <meta property="og:description" content="INTJ思维 · 深度洞察 · 创新解决方案">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="博客随笔">
+  <meta name="twitter:description" content="INTJ思维 · 深度洞察 · 创新解决方案">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "博客随笔",
+      "item": "https://xihutaijixiong.github.io/taichi-bear/posts/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://xihutaijixiong.github.io/taichi-bear/" accesskey="h" title="西湖太极熊 (Alt + H)">西湖太极熊</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/cases/" title="案例">
+                    <span>案例</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/products/" title="产品">
+                    <span>产品</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/posts/" title="博客">
+                    <span class="active">博客</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/resources/" title="资源">
+                    <span>资源</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    博客随笔
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Obsidian首页设计，新手只需要一个插件，不用css直接生成渲染图
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>过去，我一直觉得一个好看的Obsidian首页，必须要懂CSS排版，还要会前端HTML代码。那时候我到处找优质博主的CSS文件，试了一套又一套。
+Minimal主题的CSS片段，下载过；Blue Topaz的完整配置，导入过。甚至自己试着改过一些颜色变量，调了半天，最后还是觉得哪里不对。
+不是别人的CSS不好看。而是不管怎么换，始终不是自己真正想要的那个感觉。后来我反复琢磨，同时不断用AI去拆解首页的渲染逻辑，才发现一件事：
+其实根本不需要单独学CSS。直接在Obsidian页面里嵌套HTML和CSS代码，就能生成你想要的排版效果。只需要一个插件——Admonition。
+为什么是Admonition Admonition本身是一个用来创建提示框的插件，很多人用它来做笔记中的高亮块。但它的能力远不止于此。它支持在Obsidian内部直接嵌入HTML代码块，并且可以渲染出完整的样式。这意味着，你可以在不离开Obsidian的情况下，直接在笔记里写一段带CSS的HTML代码，Admonition会帮你渲染出来。
+不需要任何外部工具 不需要编辑器的预览模式切换 不需要额外的主题配置。 写进去，就能看到。这也是为什么我一直推荐新手从Admonition开始——不是因为它最强大，而是因为它门槛最低。
+具体怎么做 整个流程非常简单，四步就走完。
+第1步：下载安装Admonition 打开社区插件市场，搜索Admonition，安装并启用。不需要额外配置，默认设置就够用。
+第2步：生成一个新的ad-flex框架 安装完成后，在Obsidian的命令面板（Ctrl/Cmd&#43;P）里搜索Admonition，创建一个新的Admonition类型。
+选择Flex（弹性布局）类型，这是我最常用的框架。你可以理解为，它就是一个容器。你往里面放什么，它就渲染什么。 第3步：给AI提一个需求Prompt 这一步最关键。把你想要的首页排版描述给AI。比如我常用的需求：
+我需要一个Obsidian首页排版，使用Admonition的ad-flex框架。 整体风格干净、留白多、低刺激。 分为四个区域：
+顶部：一句我的原则语录 左栏：今日状态（一个小的待办区） 中栏：核心快捷入口（3-4个卡片链接） 右栏：最近记录列表（最近7天的笔记链接） 配色柔和，字体大小适中。 不需要很专业的技术术语。把你想象中的样子，说出来就好。
+第4步：AI自动生成，粘贴到首页 AI会返回一段完整的HTML&#43;CSS代码。复制它，粘贴到你创建的Admonition块中。保存，退出编辑模式。首页就渲染好了。
+案例展示 以下是我自己用这个方法生成的首页效果：
+整体排版干净，没有多余按钮，信息量适中。上边是今日状态，下面是核心空间。每天打开，通过今日状态主要是让自己慢下来，然后再进入核心工作空间，开始一天的工作。不需要滚动，不需要切换页面。
+实用技巧 用了一段时间后，我总结了几点经验：
+1、不要追求一次完美。
+我第一次生成的首页，颜色搭配其实不太协调。但没关系，你可以把不满意的地方告诉AI，让它局部修改。不需要重写全部代码。
+2、不同区域之间可以放双链。
+这是Obsidian最核心的能力。在Admonition渲染出的卡片旁边，直接插入双向链接，比如[[今日记录]]、[[周复盘]]。点击就能跳转，日常工作流完全串联起来。无脑修改即可。
+3、AI生成的代码可以反复复用。
+同一个排版框架，换不同的配色和内容，就可以生成为不同用途的页面。我现在的首页、项目看板、学习追踪页，都是用同一套ad-flex框架生成的。
+总结 千万不要以为不会写代码，就做不出美观的首页。过去我花了很多时间去研究CSS、去找别人的配置、去调颜色变量。最终发现，真正适合我的首页，反而是用最简单的方式自己生成的。
+“一个插件，一个AI，几步操作”。你完全可以直接跳过学习CSS的阶段，生成一个你想象中的首页。工具的价值，从来不是它有多强大。而是你能不能用它，做出自己想要的东西。
+如果你也想试试这个方法，后台回复：首页，我把我现在的首页排版对应的代码发你，复制粘贴就能用。如果你需要修改，直接参考这个给AI修改成你自己想要的版本即可。
+如果你已经用Admonition做出了自己的首页，欢迎随时交流。每个人心中都有自己理想的首页样子，工具只是帮你把它呈现出来。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-08-14 00:00:00 +0000 UTC'>August 14, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to Obsidian首页设计，新手只需要一个插件，不用css直接生成渲染图" href="https://xihutaijixiong.github.io/taichi-bear/posts/article9/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我为什么决定放弃继续维护原来的 Obsidian 库?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>01 Obsidian 帮我养成了记录习惯 我从 2021 年底开始用 Obsidian，到今天快四年了。这四年里，我几乎每天都在上面写点什么。从最早的日记、读书笔记，到后来开始搭建自己的知识管理系统，Obsidian 陪我走过了一段从「不知道记什么」到「不记就难受」的过程。
+我挺感谢这个工具的。它让我养成了记录的习惯，而且是用一种很舒服的方式。不用想格式，不用管排版，打开就写，写完就关。Markdown 的简单直接，加上本地文件的安全感，让我终于有了一个真正属于自己的知识仓库。
+这期间我积累了大量笔记。有产品设计的思考，有工作流效率的尝试，有各种阅读摘录，还有零零散散的个人复盘。这些笔记在当时帮了我很多，至少让我不再害怕「写东西」这件事。
+所以，在说「放弃」之前，我想先承认：Obsidian 对我来说，是一个非常重要的工具。
+02 旧库已经无法适应 AI 工作模式 但问题在于，2024 年以后，我的工作方式变了。
+以前写笔记，是「我写给自己看」。做知识管理，也是「我手动整理、手动分类、手动链接」。这种模式在 Obsidian 的体系里非常成立——双向链接、图谱、标签、MOC，这些概念我全都用过，也一度觉得很好用。
+可现在，AI 已经嵌入到我工作的每一个环节里了。
+我会直接和 AI 对话来梳理思路，而不是先在 Obsidian 里写一段草稿。我会让 AI 帮我总结文章、提取观点、生成对比表格，而不是自己手动去翻笔记。我甚至会让 AI 参与到写作过程中，帮我起标题、改句式、找漏洞。
+这时候问题变了：以前的问题是「怎么记」，现在的问题是「怎么和 AI 协作」。
+而 Obsidian，本质上还是一个给「我」用的工具。它的核心是「我写、我管、我查」。当协作对象从「未来的自己」变成「AI」的时候，整个逻辑就开始拧巴了。
+我试过 Obsidian 的各种 AI 插件。Copilot、Smart Connections、AI Note Helper……装了又卸，卸了又装。不是它们不好，而是它们始终是在 Obsidian 的框架里「加一个 AI 功能」，而不是以 AI 协作作为核心来设计整个系统。
+这种拧巴感积累了大半年，我终于意识到一个事实：我不是需要一个更好的 Obsidian 库，我是需要一个新的系统。
+03 我要重新打造 AI Company OS 所以我决定从头开始。
+不是迁移，是重建。不是把旧笔记搬到一个新地方，而是重新思考整个工作流的底层逻辑。
+我想要的东西，简单说就是：一个以 AI 协作为核心的个人操作系统。我把它叫做 AI Company OS。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-08-14 00:00:00 +0000 UTC'>August 14, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 我为什么决定放弃继续维护原来的 Obsidian 库?" href="https://xihutaijixiong.github.io/taichi-bear/posts/article8/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我用 Obsidian 搭建了一个全球信息订阅系统
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>在不断探索适合自己的Obsidian系统的过程中，一直坚持信息输入、信息处理、信息整合、信息输出的基础结构，很多人可能觉得最重要的是输出，但是没有输入，哪里来的输出。因此，我一直在不断地优化自己的输入系统。
+尝试过很多快速剪藏工具，浏览器收藏，或者人工输入信息等等各种方式，但用久之后会发现几个问题：
+信息渠道太分散 很难持续跟踪某个创作者 信息来源不稳定 很多优质内容会被算法淹没 尤其是一个很明显的问题：我的信息来源太局限在国内。 如果希望持续提升认知，其实需要接触更多 全球视角的信息来源。因此我开始重新梳理自己的信息输入需求。
+进一步分析梳理当前的信息输入需求，由于经过近几年的不断优化，现在坚定的通过obsidian打造最基础的自己的个人系统，因此，希望可以聚焦如下几个方向的信息输入，然后再延伸整理和输出，当前信息输入需求渠道如下：
+Reddit Threads YouTube … … 因为，一直缺少海外渠道的信息输入，因此，希望可以建立一个全球视角的信息输入系统，然后发现可以满足此需求的插件是：RSS Dashboard。
+通过此插件可以按照Feed URL关注不同渠道的博主，一旦有更新可以随时看到，然后进行后续的学习和打标，可以更好的进行信息输入，信息学习消化，然后打标按照自己的计划进行整理输出。
+在使用RSS Dashboard以后发现，在Obsidian中进行定制化的订阅非常简单，一共分如下几个步骤：
+在插件市场下载RSS Dashboard 通过打开你要的渠道如YouTube网页，右键打开源代码搜索channel_id=UChfo46ZNOV-vtehDc25A1Ug，复制对应的channel_id 建立一个URL如：https://www.youtube.com/feeds/videos.xml?channel_id=UChfo46ZNOV-vtehDc25A1Ug 然后点击RSS Dashboard，然后点击左侧导航的加号，打开Add Feed，在Feed URL中添加链接，然后填写Title标题，点击Load和Save即可。 在配置完成之后，如下图：
+然后，当你开始逐个学习之后，可以进一步按照左侧导航栏已读和未读，或者按照需求进行打标签，都可以实现。
+通过以上配置，建立了自己的信息输入系统之后，每天学习和记录之后，进行笔记整理，逐步可以建立一个全球最前沿信息选题库，同时也可以结合自己的兴趣如英语学习，关注自己喜欢的Podcast，建立自己的听力素材库。
+很多人觉得知识管理是为了“存东西”。但在我看来更重要的是：建立持续的信息输入能力。
+当输入足够稳定时：
+选题会越来越多 观点会越来越清晰 输出也会越来越轻松 而 RSS Dashboard，其实就是我现在 最核心的信息输入工具之一。通过它，我正在慢慢建立一个：属于自己的全球信息订阅系统。 如果你也在使用 Obsidian，我非常建议你试试这个插件。因为当信息输入系统搭建好之后，很多事情都会变得简单很多。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-07-22 10:00:00 +0800 CST'>July 22, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 我用 Obsidian 搭建了一个全球信息订阅系统" href="https://xihutaijixiong.github.io/taichi-bear/posts/article1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">新手别折腾了：这套 Obsidian &#43; DeepSeek 组合，便宜又能直接用
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>当前Obsidian的内容应用和AI结合已经成为不可逆的趋势，那到底选择什么AI工具才是最理想的组合状态呢？
+看了很多国内外的文章介绍，爆火的集中在Claude&#43;Obsidian的组合. 但是在经过折腾对比以后，我发现当前对于很多新手来说，这些并不是当下主要需要考虑的，更多的注意力应该在于专注记录，并学会用最低成本，最简单的方式学会如何使用AI和AI进行最高效的协同才是关键。
+对于我自己也一样，没有花太多时间去深度研究各种AI技能，而是逐步基于自己的需要来探索AI能达到的极限。
+因此，我自己一直延续一个AI辅助原则：
+配置简单 便宜好用 配置简单 Obsidian有一个插件Copilot可以非常方便的接入DeepSeek，极大的简化了接入deepseek的配置工作，核心只需要花几块钱充值一个接口，获得一个秘钥即可很快的进行配置成功，不需要太复杂的操作。
+核心配置流程只需要如下几步：
+在obsidian插件中心，下载Copilot插件 在deepseek的官网创建一个秘钥 打开Copilot配置页面，找到model，找到deepseek_chat，添加名称、官网地址、秘钥即可 然后在basic配置页面的Default Chat Model选择deepseek_chat即可 安装完成后，左边界面会出现一个文本图案，点击后在右侧边栏会有输入窗口，即可开始deekseek使用 便宜好用 作为新手免不了大量的使用接口来咨询各种问题，因此，一开始不可能达到高效和高质量的协同创作。因此，deepseek api接口使用起来，要比Claude使用起来便宜6-15倍。对于新手来说，性价比直接拉满。
+对于日常有高频作业的人来说，比如：笔记处理，批量生成等情况，以及自动化流水线作业多的人，先接入deepseek是最佳选择。
+对于日常的应用场景，如：代码、总结、翻译等等基础问题和反馈，都可以完全满足。
+等需要处理高结构性，强上下文等深度总结性的需求时，可以再考虑接入Claude来精细化的使用，那个时候才能发挥Claude的价值。
+详细Obsidian接入DeepSeek步骤 Copilot插件下载 点击下载 点击启用 已开始使用 注册deepseek创建秘钥 登录官网链接：https://www.deepseek.com，如下： 点击API开放平台，进入平台页面，如果没有账号，用手机或者邮箱注册登录即可。 建议充值10元，然后会生成一个API keys，后续接入obsidian最主要的就是秘钥。
+参数配置 打开obsidian设置，点击插件Copilot，显示界面如下： 点击Model，如下： 按照Model名称，找到deepseek-chat，勾选Enable. 点击编辑，打开参数配置页面： 添加参数：
+Model Name: 默认或者自定义即可 Base URL: https://api.deepseek.com API Key：官网充值购买的秘钥，复制粘贴进来即可 在Basic配置页面的Default Chat Model选择刚才配置好的deepseek_chat即可。 回到obsidian页面，可以看到左侧功能栏最下面有一个对话图标： 点击图标后，打开右侧边栏： 可以看到chat（free）窗口，就是deepseek输入窗口，到现在就是配置完成了。
+deepseek测试 在对话框输入文字：请总结一下Obsidian和Notion的差异？运行结果如下： 点击图标：Insert/Replace at cursor 可以将以上内容直接插入到当前笔记中： 测试正常可用。
+总结 Obsidian&#43;DeepSeek或者Obsidian&#43;Claude都是服务我们的工具，没有绝对的好坏高低之分，但是结合我们当前的使用场景和状态进展，选择当前最适合我们的工具，才能更高效的发挥出工具的价值。
+对于新手需要不断的探索各种应用，Obsidian&#43;DeepSeek的组合就是当前最佳的选择，配置只需要几分钟，界面化填写配置非常简单，详细步骤如上分享。
+希望更多的人可以充分的使用起来，如大家有更好的AI方案，也可以一起分享讨论！
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-07-22 10:00:00 +0800 CST'>July 22, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 新手别折腾了：这套 Obsidian &#43; DeepSeek 组合，便宜又能直接用" href="https://xihutaijixiong.github.io/taichi-bear/posts/article3/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">折腾了一圈，最终90%的使用仅仅依赖这5个插件！
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>基本上obsidian按照下载量排序，前100个插件都了解和研究过，满足了我极大的好奇心和探索欲，对于愿意折腾玩耍的人来说，不失为一个有意思的事情，但是如果想避坑，节约时间，还是希望先聚焦这5个能覆盖日常使用90%场景的插件，最大限度的发挥这几个插件的价值，可以让你快速形成记录的习惯，并稳步成长。
+当然，每个人的需求不同，应用场景也不同，这5个插件更多的可以帮助像我一样的普通用户，快速建立自己的知识库和系统。
+下面详细来看一下是哪几个插件。
+1. Homepage 相信每个人都希望可以有一个美观好用的首页，因为首页就像是游乐场的一个大门，只有将大门打造的合理且有吸引力，才愿意走进去探索更多的东西。
+通过安装Homepage插件后可以设置，每次打开obsidian都先打开设定好的首页。这里分享一下我自己当前的一个首页。 当前我的首页完全是基于自己的需求生长出来的，其实还远没有达到我自己期望的样子，但是一定要先固定下来，不要经常变动，聚焦有用的模块，待3个月或者半年再定期更新。
+更多的时间聚焦的输入和输出上，这个插件的作用就是让你每天可以有一个入口，入口放置你近期会频繁使用的模块。
+2. Templater 这是模版插件，每个人都有自己的习惯，比如：日记记录习惯，周复盘习惯等，当你已经有了固定的日记模版和周复盘模版，你就再也不用每次要记录和复盘的时候，重新打开一个页面，然后复制粘贴格式到新的笔记中。
+尤其对于一些需要自动更新的时间或者别的内容，都可以定制化，形成一个固定的模版，每次就可以直接使用。比如：日记模版：
+日记：{{date}} 今日工作： 今日心情： 今日生活： 日常的日记和复盘都可以沉淀来下。
+对于日常工作和生活中，会用到模版的场景非常多，比叡：
+闪念记录 日周月计划 日周月复盘 旅游计划 英语听力模版 英语写作模版 … … 我的人生系统会用到Templater的场景已有30&#43;，相信不同的人会有 更多不同的需求应用场景，这也是为什么Templater插件这么受欢迎，基本是必备插件。 3. QuickAdd 这个插件应该说解决了记录低效记录的问题，在过去每次要记录都需要新建笔记，或者插入模版，效率非常低。但是这个插件直接秒开模版并开始记录。
+当你今天完成了一天的工作， 要开始写今天的日记的时候，你不需要像以前一样，去新建日记，也不用去插入日记模版，直接通过配置快捷方式，通过Command&#43;P，打开如下页面，输入新建日记，就可以找到选项如下：
+点击之后就会新建一个今日日记的模版，瞬间开始撰写今日日记。中间减少了大脑多个思考和执行交付的环节，减少了大脑的负担。
+通过这个插件可以极大的较少大脑记录的摩擦，快速响应，直接进入记录状态。
+4. Dataview 这个插件作用是汇总查询笔记形成一个表格的形式，需要用到类似一点点SQL语法，因此，会有一点点门槛，但是并不复杂，基本学习1小时就可以学会。一旦你学会使用dataview，你会发现，原来自己可以对自己的笔记这么有掌控力。
+每个人可以按照自己的想法去汇总所有笔记，只要你依据自己的想法，给每个笔记设计好属性，就可以依据属性字段，以任意维度进行查询甚至统计。
+table type,created from #日记 limit 2 渲染如下：
+以上就是查询日记的语法和渲染结果，如果希望更复杂的，还可以统计每日，每周，每月的笔记数量等各种统计结果。
+这也是在使用obsidian管理笔记过程中，必定要下载使用的插件，几乎没有之一。
+5. Kanban kanban插件是用来管理任务的插件，对于日常工作和生活管理，是一定离不开任务管理的，常用的任务管理坐标系分：
+重要紧急 不重要紧急 重要不紧急 不重要不紧急 我自己添加了一个固定周期提醒任务，在看板中，可以按照自己的需要，建立管理框架，如果作为日常普通管理，可以参考以上常用的任务管理分类，我就是参考以上标准建立如下： 如果希望任务看板更好看，还可以对每个部分进行颜色设置等。
+总结 希望还没折腾的人，先折腾这5个插件，它包含了首页体系框架、日常任务管理、日常习惯沉淀、工作流搭建，可视化数据监控分析等场景。可以帮你快速上手，节约更多时间，更快速的建立自己的管理体系。因为这5个插件应该会是你最经常要用到的插件，可能覆盖你90%的场景需要。
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-07-21 10:00:00 +0800 CST'>July 21, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 折腾了一圈，最终90%的使用仅仅依赖这5个插件！" href="https://xihutaijixiong.github.io/taichi-bear/posts/article2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">我的Obsidian新主页，让我更期待每日打开记录
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>过去3个多月了，每天打开我如下的主页，发现一个问题，我经常使用的模块，可能就3-5个，但是首页的太多板块让我总感觉有一定的压迫或者说压力感，说不出来的感觉，无法呼吸，没有让我放松的感觉。
+作为一个Obsidian的首页，我希望可以有如下几个作用：
+有呼吸感：能让我有放松的感觉 有聚焦感：希望是最简单的排版 有安静和谐感：能让我安静下来，慢慢的输入，不着急 基于以上需要，我详细整理了我的需求和AI进行交互，最终在3个月后又改版了一个新的首页，如下：
+以上就是我新改版的首页。
+感受分享 我认为这个首页整体给出一个：低刺激、长期主义、生活感驱动的人生系统界面。 这是它最有价值的地方，过去我自己，或者也有和我一样的很多人的首页都是“功能中心”，而现在这个首页开始变成：
+情绪入口 节奏入口 身份入口 生活方式入口 这是变化非常大的差异点。
+优点分享 这个首页，最大的优点：不像“效率系统”，更像“生活空间”。你这个首页最明显的特点：
+没有强压迫感 没有大量数据库 没有复杂 KPI 没有信息密度焦虑 没有“我要变强”的攻击性 而是： 安静 克制 稳定 留白 节奏感 因为很多使用 Obsidian 的人最终都很容易会陷入：“系统越来越强，但人越来越累。” 而我这里已经开始反过来了：“系统越来越轻，但人越来越稳定。”这是我希望的长期可持续的方向。 结构特点 对于整体结构都有它独特的作用：
+顶部：简单说明我自己的需求向往 今日状态：不要迷失自己，每天保证一个良好的节奏循环 核心空间：每天要做的事情，核心、生活、内容 最近记录：可以看到每天都在坚持的内容输入和输出 尾部：告诉自己要的状态是什么，每天都有一个完结状态 视觉特点 新的首页，视觉结构非常稳定，让人认知负担低，不会有压抑感。
+今日状态不是任务、目标、KPI。而是安静工作、英语输入、空间恢复、散步放松，这是我人生状态的体现。告诉我，人生不是只有工作和产出。
+整体图标简单、信息量低、一屏可读、再也没有了向以前首页一样的那么多模块，随时给人工作的压迫感。让我可以每天轻松的打开，瞬间无压力。
+总结 我告诉我自己，要在首页有轻松感，少入口，少决策、少跳转、少刺激。让我可以降低我的注意力切换频率，认知疲劳，页面焦虑，系统维护欲，从而进一步提升我的稳定感，进入感，仪式感，长期打开率无压力个感。
+这种页面非常适合我这种INTJ、长期创作者、深度工作性人格。希望未来还有更多适合自己的改变。
+希望这次分享可以给到大家不一样的感受，每个人都应该找到适合自己的首页，让自己每天更愿意打开记录自己的生活。
+如果大家有更多好的首页想法，希望可以随时交流分享！
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-05-25 00:00:00 +0000 UTC'>May 25, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to 我的Obsidian新主页，让我更期待每日打开记录" href="https://xihutaijixiong.github.io/taichi-bear/posts/article5/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Obsidian是当前世界最好的笔记工具之一，你是否认可？
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>随着AI的发展和大神Karpathy的热帖被关注，Obsidian引来了一个新的高光时刻，越来越多的人开始使用Obsidian。
+回想4年前我刚开始用笔记工具还是印象笔记，然后到Typora，再到Notion，最后确定用Obsidian作为我的唯一笔记工具，我发现找到适合自己的工具是多么重要。
+对于INTJ的我来说，由于对各种笔记主题有要求，一直在Notion和Obsidian之间徘徊和纠结，最终终于生命不息，折腾不止的想法，决定选择Obsidian。
+在折腾了3年之后，已经折腾出来一个自己的人生管理系统，回顾3年陪着Obsidian一起成长，我想说，Obsidian是当前世界最好的笔记工具之一，不知道大家是否认可？
+先来总结一下使用过Obsidian三年后，Obsidian给我感受最深的几大好处：
+安全性：在当前市场上有不下几十种笔记，如：飞书、语雀、思源、Notion、印象等等，真正完全可以本地的笔记屈指可数，本地存储直接解决了你终生记录笔记会丢失的风险，且不用过多考虑通过技术手段去备份，对于非技术用户不要太友好，你只需要去记录即可。 个性化：对于Obsidian强大的社区生态文化，你可以在Obsidian上按照自己的想法，尽情的去折腾各种插件，去探索各种应用场景，就像装修房子一样，可以随时换装修风格，当然前提是要先以输入输出为先。强大的个性化定制，拉满了Obsidian的趣味性，怎能不被它吸引。 便捷好用：对于Obsidian不需要考虑是否有网络，网络速度如何，打开即用，随时记录和折腾。如果你懂一点或者愿意学习一点技术，可以通过CSS深度折腾装修，如果你只想输入和输出，可以选择最简单的主题，通过最简单的base库进行打标管理，然后专注你的写作输出即可，没有任何其他阻碍。 写了这么多，接下来给大家分享一下在安全好用的前提下，我在使用过程中，最有趣也最有价值的几个个性化折腾。
+反复折腾的自动化工作流 不管怎么折腾，一定还是要以成长和效率为先，不然obsidian的价值就浪费了，因此，经过这几年，我认为最好入门，最好用的功能折腾，就是去反复折腾你工作和学习要用到的场景，形成一个自动化的工作流。 通过QuickAdd&#43;Templater这个简单的组合，就可以快速创建笔记，记录你日常经常要用到的场景，比如：
+管理选题 管理健康 管理周计划 管理认知 管理日报 管理写作 管理周报 以上各种场景，我已经折腾了不下30个场景，但是经过折腾后，你会发现越来越聚焦，越来越高频的几个会留下来，然后就会自然形成习惯，慢慢的生长成为你人生系统的一部分。这种折腾本身就是成长的一部分，非常值得。 反复折腾的主题和美化 对于折腾主题和各种美化技巧，比如调整banner图片，调整字体和背景等等，虽然过程中也会浪费一点时间，但是正因为习惯，他让我每天愿意打开obsidian，无形中提高了我记录的频次，助力我养成了习惯。
+人天生有爱美的一颗心，无论男女老少，因此，分享几个我自己喜欢的主题如下：
+个人偏好简洁美观，因此更多的选择了以上图内主题。除此之外，可以通过banners插件，和style settings插件，来进一步设置调整obsidian美观。
+提醒：无论多么喜欢，千万不要过渡陷入，忽略了输入和输出。
+反复折腾的可视化监控 既然用obsidian进行记录和创作，要想更好的进行管理，就免不了进行整理和汇总，以及通过数据量化的方式来进行精细化的监控分析。
+对于Obsidian可用来进行可视化的监控管理， 虽然不像Notion那样可以直接拖拉拽，但是只要熟悉简单的语法和原理，后续维护成本极低，尤其是当前AI编程已经极快了，想要什么代码，秒出。
+所以，如果要整理汇总既可以通过最简单的base库：如下： 也可以通过dataview进行简单的统计分析，如下： 代码如下：
+table length(rows) as 阅读数 from #输入 group by dateformat(created, &#34;yyyy-W&#34;) as 周 如果希望有更直观的趋势图来进行指标监控，可以如下： 代码如下：
+// 读取数据 let pages = dv.pages(&#39;&#34;004存档/生活/健康&#34;&#39;) .where(p =&gt; p.weight &amp;&amp; p.last_update) .sort(p =&gt; p.last_update); // 转换数据 let labels = pages.map(p =&gt; p.last_update.toFormat(&#34;yyyy-MM-dd&#34;)); let data = pages.map(p =&gt; p.weight); // 生成 chart 代码块 let chartCode = ` \`\`\`chart type: line labels: [${labels.join(&#34;,&#34;)}] series: - title: Weight data: [${data.join(&#34;,&#34;)}] \`\`\` `; // 输出 dv.paragraph(chartCode); 以上只要学习过一次，后续维护只需要改变几个变量即可。
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-05-06 00:00:00 +0000 UTC'>May 6, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to Obsidian是当前世界最好的笔记工具之一，你是否认可？" href="https://xihutaijixiong.github.io/taichi-bear/posts/article7/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Obsidian Web Clipper 1.5带来新的体验，让我直接和油管界面说ByeBye了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>过去使用的Obsidian Web Clipper 1.3版本，更多的是用于剪藏和阅读，但是随着1.5版本都已经出来了，增加了视频字幕同步的功能，让我直接和油管界面说再见了。
+当每次访问油管希望可以将优质的视频的内容文本进行沉淀和review总结的时候，还需要去寻找各种技术手段来实现，这次直接通过Obsidian Web Clipper一键实现了。
+1.5版本阅读器功能支持油管视频的字幕交互了，你可以随时看到视频进展，同时看到字幕对应的上下文，暂停后，可以直接进行阅读理解或者记录。
+设置阅读模式 要想可以非常方便的使用阅读模式来看油管，只要进行如下简单的设置： 选择阅读器即可。
+大纲与字幕交互体验 打开浏览器后，点击网址左边的Obsidian Web Clipper图标： 点击之后就会形成如下的阅读器模式： 左边大纲：左边直接按照原生的内容底层标记，形成一个大纲，方便你眼看到全视频的内容框架； 中间字幕交互体验：打开不同的功能有不同的体验 固定播放器：可以固定播放器 自动滚动：可以直接滚动到当前进度 高亮当前行：当前进度行会显示红色标记线和文本高亮 单击字幕：通过单击字幕，直接跳转到当前字幕进度 当前不足 阅读器模式只能通过浏览器的方式进行，当保存内容到obsidian中的时候，可见就没有那么好的交互体验了。
+建议解决方案
+如果希望也可以实现在obsidian中可以进行交互体验，就需要在obsidian中通过AI添加一个skill，给每个时间添加链接，让视频阅读可以同步浏览进行。
+如果还希望有对应的中文翻译，也可以通过AI添加一个skill来进行补充翻译。
+通过实现以上功能，基本代表已经实现了很多app的功能，间接帮你节约了大几百的app会员费用。
+场景应用 通过以上功能体验的更新，未来可以应用到的场景又进一步拓宽了，不仅仅是在英语学习场景，很多其他场景都可以在Obsidian中得到更深度的拓展。我发现随着生态和功能的迭代，以及obsidian的折腾，你会发现学习和创新会越来越有趣。
+下面列一下我在用的几个场景仅供参考：
+英语学习：通过阅读器来提高油管学习英语的体验，拓宽学习素材的同时，可以更好的学习沉淀英语； 知识管理：很多油管的知识管理应用方案，可以一键学习和剪藏中英文文本； 旅游管理：这个世界你想去的旅游景点，可以逐步积累并记录下来，未来通过AI帮你来定制属于你自己的旅游计划； 认知提升：通过认知类视频，比如：纳瓦尔访谈，可以快速收藏沉淀和总结，吸收其中的核心思想和执行建议方案； … … 其实，只要你在通过Obsidian不断的记录和思考，你人生的任何领域，都会慢慢变好，通过AI加持，可以快速变好。 总结 前几天还在使用Obsidian Web Clipper 1.3版本，没想到短短的时间，1.5版本就出来了，还带来了这么大的功能升级，所以，你会发现，obsidian团队是在创造更好用的工具，如果你也希望更好的通过obsidian管理或者正在通过obsidian管理自己人生的路上，一定不要怕折腾，只有自己折腾出来的系统，才是属于最适合自己的系统。
+对于Obsidian Web Clipper 1.5版本，大家有使用过的，还有哪些好的应用场景和体验，希望可以一起交流分享！
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-04-26 00:00:00 +0000 UTC'>April 26, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to Obsidian Web Clipper 1.5带来新的体验，让我直接和油管界面说ByeBye了" href="https://xihutaijixiong.github.io/taichi-bear/posts/article6/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Obsidian的两种可视化对比，你喜欢哪种？
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Obsidian的可视化不像Notion，只要填写或者导入数据，就可以自动化的快速生成各种饼图、折线图，甚至进行多维度的过滤和分组透视。
+虽然Obsidian无法自动化的直接达成可视化的效果，但是他同样有自己的优势，只要在记录笔记的时候，对于设定的属性有记录数据，就可以通过插件或者代码，非常快速方便的生成可视化的图表。
+今天就来分享一下，Obsidian最简单方便，也是最常用的两种可视化的方法，进行对比，看你最喜欢哪一种可视化的表达方式。
+方式1： Tracker插件 直接在插件市场里面，下载Tracker插件，然后在新建笔记的时候，建立属性如下：
+last_update: 2026-03-24 weight: 75.3 每天记录数据之后，通过如下代码：
+searchType: frontmatter searchTarget: last_update,weight xDataset: 0 folder: 004存档/生活/健康 line: title: Weight Log yAxisLabel: Weight yAxisUnit: kg lineColor: blue searchType:查询方式（frontmatter属性） searchTarget：查询目标字段（last_update，weight） xDataset：x轴从0开始 folder：文件夹路径 line：折线图 title：标题 yAxisLabel：y轴标签 yAxisUnit：y轴单位 lineColor：折线颜色 图形渲染如下： 整体代码语法比较简单，只要记录，就可以随时自动生成图表。 缺点：图形不够美观
+方式2：dataview插件&#43;charts插件 可能很多人觉得插件dataview主要是用来生成表格的，其实它还有很多拓展功能，通过dataviewjs的方式，结合charts插件，可以实现自动化加可视化图表生成。
+同样是建立属性如下：
+last_update: 2026-03-24 weight: 75.3 每天记录数据之后，通过如下代码：
+// 读取数据 let pages = dv.pages(&#39;&#34;004存档/生活/健康&#34;&#39;) .where(p =&gt; p.weight &amp;&amp; p.last_update) .sort(p =&gt; p.last_update); // 转换数据 let labels = pages.map(p =&gt; p.last_update.toFormat(&#34;yyyy-MM-dd&#34;)); let data = pages.map(p =&gt; p.weight); // 生成 chart 代码块 let chartCode = ` \`\`\`chart type: line labels: [${labels.join(&#34;,&#34;)}] series: - title: Weight data: [${data.join(&#34;,&#34;)}] \`\`\` `; // 输出 dv.paragraph(chartCode); 通过dataviewjs进行数据提取和转换，然后通过chart进行可视化实现，渲染如下： ...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-04-06 00:00:00 +0000 UTC'>April 6, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to Obsidian的两种可视化对比，你喜欢哪种？" href="https://xihutaijixiong.github.io/taichi-bear/posts/article4/"></a>
+</article>
+    </main>
+    <footer class="footer mt-auto py-3 text-center">
+  <div>
+    <span>© 2026 西湖太极熊 · AI & obsidian</span>
+  </div>
+</footer></body>
+
+</html>

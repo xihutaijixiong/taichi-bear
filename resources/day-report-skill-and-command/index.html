@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Daily Report Skill v1.0 and Command | 西湖太极熊</title>
+<meta name="keywords" content="">
+<meta name="description" content="用AI来进行自动化日报总结">
+<meta name="author" content="">
+<link rel="canonical" href="https://xihutaijixiong.github.io/taichi-bear/resources/day-report-skill-and-command/">
+<link crossorigin="anonymous" href="../../taichi-bear/assets/css/stylesheet.8d28b609a9b9fe056815a797e5dada54f9337ab991200c4b79f12e56ea1d9b9a.css" integrity="sha256-jSi2Cam5/gVoFaeX5draVPkzermRIAxLefEuVuodm5o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xihutaijixiong.github.io/taichi-bear/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xihutaijixiong.github.io/taichi-bear/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xihutaijixiong.github.io/taichi-bear/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xihutaijixiong.github.io/taichi-bear/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xihutaijixiong.github.io/taichi-bear/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xihutaijixiong.github.io/taichi-bear/resources/day-report-skill-and-command/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://xihutaijixiong.github.io/taichi-bear/resources/day-report-skill-and-command/">
+  <meta property="og:site_name" content="西湖太极熊">
+  <meta property="og:title" content="Daily Report Skill v1.0 and Command">
+  <meta property="og:description" content="用AI来进行自动化日报总结">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="resources">
+    <meta property="article:published_time" content="2026-07-22T10:00:00+08:00">
+    <meta property="article:modified_time" content="2026-07-22T10:00:00+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Daily Report Skill v1.0 and Command">
+  <meta name="twitter:description" content="用AI来进行自动化日报总结">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "资源合集",
+      "item": "https://xihutaijixiong.github.io/taichi-bear/resources/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Daily Report Skill v1.0 and Command",
+      "item": "https://xihutaijixiong.github.io/taichi-bear/resources/day-report-skill-and-command/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Daily Report Skill v1.0 and Command",
+  "name": "Daily Report Skill v1.0 and Command",
+  "description": "用AI来进行自动化日报总结",
+  "keywords": [
+    
+  ],
+  "articleBody": "Daily Report Skill v1.0 Purpose 根据 AI Company OS 当天新增及修改的 Markdown 文件，自动生成当天工作日报，并保存到新的日报笔记。\n日报不评价，不夸奖，不推测，只基于当天实际内容进行总结。\nInput AI Company OS 路径： {{VaultPath}} 日报日期： {{Today}} 输出目录： 02_Thinking/Daily Notes/ Scope 仅分析：\n今天新增的 Markdown 文件 + 今天修改过的 Markdown 文件 忽略：\n.obsidian Attachments 图片 PDF Canvas Templates Archive Trash 非 Markdown 文件 如同一文件今天修改多次，仅统计一次。\nWorkflow 开始 ↓ 扫描今天新增文件 ↓ 扫描今天修改文件 ↓ 去重 ↓ 读取正文 ↓ 提取今日工作 ↓ 提取成果 ↓ 提取思考 ↓ 分析内容机会 ↓ 生成下一步建议 ↓ 生成日报 Markdown ↓ 创建新笔记 ↓ 结束 Report Rules 日报必须完全依据今天扫描到的内容。\n禁止：\n虚构 脑补 推测未来计划 评价工作好坏 夸奖 鸡汤 如果某部分没有内容，应输出：\n今天暂无明显内容。 而不是自行补充。\nReport Structure 生成如下 Markdown：\n# Daily Report - {{Today}} --- ## 一、今日工作总结 （200~400 字） 要求： 总结今天真正推进了哪些工作。 不要按照文件名罗列。 如果多个文件属于同一个主题，应进行合并总结。 --- ## 二、今日主要成果 列出 3~5 项成果。 每项包括： ### 成果一 做了什么 为什么重要 对 AI Company OS 的推进作用 --- ### 成果二 ... --- ## 三、今日思考 根据所有笔记提炼今天形成的新原则。 相同思想进行合并。 例如： - 工作流进一步简化 - Metadata 自动化原则 - AI Company OS 架构调整 - Prompt 设计原则 不要重复。 --- ## 四、IP 内容机会 分析今天内容适合继续输出： ### 微信公众号 标题： 核心内容： --- ### 视频 标题： 核心内容： --- ### PDF 标题： 核心内容： --- ### AI Company OS 文档 标题： 核心内容： --- 如果没有适合内容： 写： 今天暂无明显内容。 --- ## 五、下一步建议 结合今天已经开始的工作及当前进展和未来可能得发展规划。 输出 3~5 条（可以是规划，但是不仅限规划）。 要求： 继续推进已有工作。 不要新增完全无关项目。 建议必须可以执行。 例如： - 完成 Metadata Builder v1.1 - 整理 Workflow Skill 文档 - 优化日报 Prompt Output Rules 创建新的 Markdown：\n02_Thinking/Daily Notes/ {{Today}} Daily Report.md 例如：\n02_Thinking/Daily Notes/ 2026-07-07 Daily Report.md Output Format 直接输出完整 Markdown。\n禁止输出解释。\n禁止输出分析过程。\n禁止输出 Prompt。\n只输出最终日报内容。\nFile Creation 若文件不存在：\n创建： 02_Thinking/Daily Notes/{{Today}} Daily Report.md 若已经存在：\n覆盖原内容。 Completion Report 日报生成完成后，再输出一个执行报告：\n# Workflow Report 扫描文件： 新增： XX 修改： XX 实际分析： XX 生成日报： √ 输出位置： 02_Thinking/Daily Notes/{{Today}} Daily Report.md Daily Report Skill v1.0 Command 执行 Skill： Daily Report Skill v1.0 AI Company OS 路径： /Users/用户名/Documents/AI Company OS 要求： 1. 扫描今天新增和修改的 Markdown 文件 2. 根据 Skill 规则生成日报 3. 创建（或覆盖）： 02_Thinking/Daily Notes/{{Today}} Daily Report.md 4. 输出 Workflow Report ",
+  "wordCount" : "291",
+  "inLanguage": "en",
+  "datePublished": "2026-07-22T10:00:00+08:00",
+  "dateModified": "2026-07-22T10:00:00+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xihutaijixiong.github.io/taichi-bear/resources/day-report-skill-and-command/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "西湖太极熊",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xihutaijixiong.github.io/taichi-bear/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://xihutaijixiong.github.io/taichi-bear/" accesskey="h" title="西湖太极熊 (Alt + H)">西湖太极熊</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/cases/" title="案例">
+                    <span>案例</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/products/" title="产品">
+                    <span>产品</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/posts/" title="博客">
+                    <span>博客</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/resources/" title="资源">
+                    <span>资源</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Daily Report Skill v1.0 and Command
+    </h1>
+    <div class="post-description">
+      用AI来进行自动化日报总结
+    </div>
+    <div class="post-meta">
+
+<span title='2026-07-22 10:00:00 +0800 CST'>July 22, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h1 id="daily-report-skill-v10">Daily Report Skill v1.0<a hidden class="anchor" aria-hidden="true" href="#daily-report-skill-v10">#</a></h1>
+<h2 id="purpose">Purpose<a hidden class="anchor" aria-hidden="true" href="#purpose">#</a></h2>
+<p>根据 AI Company OS 当天新增及修改的 Markdown 文件，自动生成当天工作日报，并保存到新的日报笔记。</p>
+<p>日报不评价，不夸奖，不推测，只基于当天实际内容进行总结。</p>
+<hr>
+<h2 id="input">Input<a hidden class="anchor" aria-hidden="true" href="#input">#</a></h2>
+<pre tabindex="0"><code>AI Company OS 路径：
+
+{{VaultPath}}
+
+日报日期：
+
+{{Today}}
+
+输出目录：
+
+02_Thinking/Daily Notes/
+</code></pre><hr>
+<h2 id="scope">Scope<a hidden class="anchor" aria-hidden="true" href="#scope">#</a></h2>
+<p>仅分析：</p>
+<pre tabindex="0"><code>今天新增的 Markdown 文件
+
++
+
+今天修改过的 Markdown 文件
+</code></pre><p>忽略：</p>
+<pre tabindex="0"><code>.obsidian
+
+Attachments
+
+图片
+
+PDF
+
+Canvas
+
+Templates
+
+Archive
+
+Trash
+
+非 Markdown 文件
+</code></pre><p>如同一文件今天修改多次，仅统计一次。</p>
+<hr>
+<h2 id="workflow">Workflow<a hidden class="anchor" aria-hidden="true" href="#workflow">#</a></h2>
+<pre tabindex="0"><code>开始
+
+↓
+
+扫描今天新增文件
+
+↓
+
+扫描今天修改文件
+
+↓
+
+去重
+
+↓
+
+读取正文
+
+↓
+
+提取今日工作
+
+↓
+
+提取成果
+
+↓
+
+提取思考
+
+↓
+
+分析内容机会
+
+↓
+
+生成下一步建议
+
+↓
+
+生成日报 Markdown
+
+↓
+
+创建新笔记
+
+↓
+
+结束
+</code></pre><hr>
+<h1 id="report-rules">Report Rules<a hidden class="anchor" aria-hidden="true" href="#report-rules">#</a></h1>
+<p>日报必须完全依据今天扫描到的内容。</p>
+<p>禁止：</p>
+<pre tabindex="0"><code>虚构
+
+脑补
+
+推测未来计划
+
+评价工作好坏
+
+夸奖
+
+鸡汤
+</code></pre><p>如果某部分没有内容，应输出：</p>
+<pre tabindex="0"><code>今天暂无明显内容。
+</code></pre><p>而不是自行补充。</p>
+<hr>
+<h1 id="report-structure">Report Structure<a hidden class="anchor" aria-hidden="true" href="#report-structure">#</a></h1>
+<p>生成如下 Markdown：</p>
+<pre tabindex="0"><code># Daily Report - {{Today}}
+
+---
+
+## 一、今日工作总结
+
+（200~400 字）
+
+要求：
+
+总结今天真正推进了哪些工作。
+
+不要按照文件名罗列。
+
+如果多个文件属于同一个主题，应进行合并总结。
+
+---
+
+## 二、今日主要成果
+
+列出 3~5 项成果。
+
+每项包括：
+
+### 成果一
+
+做了什么
+
+为什么重要
+
+对 AI Company OS 的推进作用
+
+---
+
+### 成果二
+
+...
+
+---
+
+## 三、今日思考
+
+根据所有笔记提炼今天形成的新原则。
+
+相同思想进行合并。
+
+例如：
+
+- 工作流进一步简化
+- Metadata 自动化原则
+- AI Company OS 架构调整
+- Prompt 设计原则
+
+不要重复。
+
+---
+
+## 四、IP 内容机会
+
+分析今天内容适合继续输出：
+
+### 微信公众号
+
+标题：
+
+核心内容：
+
+---
+
+### 视频
+
+标题：
+
+核心内容：
+
+---
+
+### PDF
+
+标题：
+
+核心内容：
+
+---
+
+### AI Company OS 文档
+
+标题：
+
+核心内容：
+
+---
+
+如果没有适合内容：
+
+写：
+
+今天暂无明显内容。
+
+---
+
+## 五、下一步建议
+
+结合今天已经开始的工作及当前进展和未来可能得发展规划。
+
+输出 3~5 条（可以是规划，但是不仅限规划）。
+
+要求：
+
+继续推进已有工作。
+
+不要新增完全无关项目。
+
+建议必须可以执行。
+
+例如：
+
+- 完成 Metadata Builder v1.1
+- 整理 Workflow Skill 文档
+- 优化日报 Prompt
+</code></pre><hr>
+<h1 id="output-rules">Output Rules<a hidden class="anchor" aria-hidden="true" href="#output-rules">#</a></h1>
+<p>创建新的 Markdown：</p>
+<pre tabindex="0"><code>02_Thinking/Daily Notes/
+
+{{Today}} Daily Report.md
+</code></pre><p>例如：</p>
+<pre tabindex="0"><code>02_Thinking/Daily Notes/
+
+2026-07-07 Daily Report.md
+</code></pre><hr>
+<h1 id="output-format">Output Format<a hidden class="anchor" aria-hidden="true" href="#output-format">#</a></h1>
+<p>直接输出完整 Markdown。</p>
+<p>禁止输出解释。</p>
+<p>禁止输出分析过程。</p>
+<p>禁止输出 Prompt。</p>
+<p>只输出最终日报内容。</p>
+<hr>
+<h1 id="file-creation">File Creation<a hidden class="anchor" aria-hidden="true" href="#file-creation">#</a></h1>
+<p>若文件不存在：</p>
+<pre tabindex="0"><code>创建：
+
+02_Thinking/Daily Notes/{{Today}} Daily Report.md
+</code></pre><p>若已经存在：</p>
+<pre tabindex="0"><code>覆盖原内容。
+</code></pre><hr>
+<h1 id="completion-report">Completion Report<a hidden class="anchor" aria-hidden="true" href="#completion-report">#</a></h1>
+<p>日报生成完成后，再输出一个执行报告：</p>
+<pre tabindex="0"><code># Workflow Report
+
+扫描文件：
+
+新增：
+XX
+
+修改：
+XX
+
+实际分析：
+XX
+
+生成日报：
+√
+
+输出位置：
+
+02_Thinking/Daily Notes/{{Today}} Daily Report.md
+</code></pre><h1 id="daily-report-skill-v10-command">Daily Report Skill v1.0 Command<a hidden class="anchor" aria-hidden="true" href="#daily-report-skill-v10-command">#</a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>执行 Skill：
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Daily Report Skill v1.0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>AI Company OS 路径：
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>/Users/用户名/Documents/AI Company OS
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>要求：
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>1. 扫描今天新增和修改的 Markdown 文件
+</span></span><span style="display:flex;"><span>2. 根据 Skill 规则生成日报
+</span></span><span style="display:flex;"><span>3. 创建（或覆盖）：
+</span></span><span style="display:flex;"><span>   02_Thinking/Daily Notes/{{Today}} Daily Report.md
+</span></span><span style="display:flex;"><span>4. 输出 Workflow Report
+</span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer mt-auto py-3 text-center">
+  <div>
+    <span>© 2026 西湖太极熊 · AI & obsidian</span>
+  </div>
+</footer></body>
+
+</html>

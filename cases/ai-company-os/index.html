@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI Company OS | 西湖太极熊</title>
+<meta name="keywords" content="">
+<meta name="description" content="探索如何利用 AI、知识管理和自动化工作流，构建个人级智能操作系统，将信息、经验和工作流程转化为长期资产。">
+<meta name="author" content="">
+<link rel="canonical" href="https://xihutaijixiong.github.io/taichi-bear/cases/ai-company-os/">
+<link crossorigin="anonymous" href="../../taichi-bear/assets/css/stylesheet.8d28b609a9b9fe056815a797e5dada54f9337ab991200c4b79f12e56ea1d9b9a.css" integrity="sha256-jSi2Cam5/gVoFaeX5draVPkzermRIAxLefEuVuodm5o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xihutaijixiong.github.io/taichi-bear/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xihutaijixiong.github.io/taichi-bear/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xihutaijixiong.github.io/taichi-bear/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xihutaijixiong.github.io/taichi-bear/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xihutaijixiong.github.io/taichi-bear/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xihutaijixiong.github.io/taichi-bear/cases/ai-company-os/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://xihutaijixiong.github.io/taichi-bear/cases/ai-company-os/">
+  <meta property="og:site_name" content="西湖太极熊">
+  <meta property="og:title" content="AI Company OS">
+  <meta property="og:description" content="探索如何利用 AI、知识管理和自动化工作流，构建个人级智能操作系统，将信息、经验和工作流程转化为长期资产。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="cases">
+    <meta property="article:published_time" content="2026-07-22T10:00:00+08:00">
+    <meta property="article:modified_time" content="2026-07-22T10:00:00+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI Company OS">
+  <meta name="twitter:description" content="探索如何利用 AI、知识管理和自动化工作流，构建个人级智能操作系统，将信息、经验和工作流程转化为长期资产。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "案例展示",
+      "item": "https://xihutaijixiong.github.io/taichi-bear/cases/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "AI Company OS",
+      "item": "https://xihutaijixiong.github.io/taichi-bear/cases/ai-company-os/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI Company OS",
+  "name": "AI Company OS",
+  "description": "探索如何利用 AI、知识管理和自动化工作流，构建个人级智能操作系统，将信息、经验和工作流程转化为长期资产。",
+  "keywords": [
+    
+  ],
+  "articleBody": "AI Company OS：构建个人级 AI 工作与决策系统 案例简介 随着 AI 工具快速发展，个人面临的问题已经从“有没有工具”变成：\n如何管理越来越多的信息？\n如何让 AI 真正融入日常工作？\n如何将经验沉淀为长期资产？\n如何提高学习、工作和内容创造效率？\n基于多年数据分析、业务分析和知识管理实践，我尝试构建一个属于个人的 AI Operating System（AI 操作系统），将 AI、知识管理、数据分析和自动化工作流结合，打造一个持续迭代的个人生产系统。\n背景：从工具使用到系统构建 过去：\n收集信息 ↓ 保存资料 ↓ 学习工具 ↓ 重复搜索 ↓ 经验流失 问题：\n信息越来越多，但无法形成知识\n学习很多工具，但没有形成工作流\nAI使用停留在临时问答\n经验无法复用\n因此，我希望建立：\n输入信息 ↓ AI处理 ↓ 知识沉淀 ↓ 经验复用 ↓ 内容输出 ↓ 持续优化 解决方案：AI Company OS 架构 AI Company OS 将个人看作一家小型企业，通过不同模块管理个人资产。\n整体架构：\nAI Company OS | ------------------------------------------------ | | | | 知识系统 工作系统 职业系统 内容系统 | AI Layer | AI Agent / Workflow 核心模块 01 Knowledge OS（知识操作系统） 目标 建立个人长期知识资产库。\n解决：\n收藏过多\n信息分散\n无法输出\n主要方法：\n信息输入 来源：\n文章\n视频\n书籍\n工作经验\nAI对话\n↓\nAI处理 利用 AI：\n总结内容\n提取关键观点\n分类整理\n生成关联\n↓\n知识沉淀 使用：\nObsidian\nMarkdown\n双向链接\nMOC导航\n最终形成：\n信息 ↓ 知识 ↓ 观点 ↓ 内容 02 Work OS（工作操作系统） 目标 提升日常工作的效率和质量。\n主要探索：\nAI辅助分析流程 传统：\n业务需求 ↓ 人工思考 ↓ 查询数据 ↓ 分析 ↓ 写报告 AI增强：\n业务需求 ↓ AI拆解问题 ↓ 分析框架设计 ↓ 数据验证 ↓ AI辅助总结 ↓ 决策建议 应用场景：\n数据分析\n报告生成\n信息整理\n工作流程优化\n03 Career OS（职业操作系统） 目标 将职业发展从随机寻找机会，转变为系统管理。\n包含：\n岗位研究系统 记录：\nJD数据库\n岗位趋势\n技能要求\n能力成长系统 分析：\n当前能力\nSkill Gap\n学习路径\n求职系统 包括：\n简历优化\n面试案例库\n项目资产库\n形成：\n市场需求 ↓ 能力分析 ↓ 技能提升 ↓ 岗位匹配 ↓ 职业升级 04 Content OS（内容生产系统） 目标 将个人经验转化为公开内容和长期资产。\n流程：\n日常输入 ↓ 知识整理 ↓ AI辅助加工 ↓ 文章/视频 ↓ 用户反馈 ↓ 优化系统 应用方向：\n微信公众号\nYouTube\nBlog\n知识产品\nAI 在系统中的角色 AI 不只是聊天工具，而是个人智能助手。\n主要应用：\nAI Research Assistant 帮助：\n信息搜索\n内容总结\n资料整理\nAI Writing Assistant 帮助：\n文章结构设计\n内容优化\n多平台改写\nAI Data Analyst 帮助：\n数据分析思路\nSQL辅助\n洞察总结\nAI Career Assistant 帮助：\nJD分析\n简历优化\n面试准备\n使用工具 当前探索工具：\n领域 工具 知识管理 Obsidian、Markdown AI助手 ChatGPT、Claude等 自动化 AI Workflow 内容发布 Blog、公众号、YouTube 数据分析 SQL、Python、BI工具 当前成果 通过 AI Company OS 探索：\n1. 建立个人知识资产体系 将：\n学习资料\n工作经验\nAI实践\n内容素材\n统一沉淀。\n2. 建立AI增强工作流程 探索：\n如何让 AI 参与：\n分析\n写作\n学习\n决策\n3. 构建个人品牌基础 将：\n经验 ↓ 知识 ↓ 内容 ↓ 产品 形成长期积累。\n未来方向 AI Company OS 仍在持续迭代。\n未来计划：\n更多 AI Agent 工作流\n自动化个人流程\n开放模板分享\n构建个人 AI 工作系统产品\n",
+  "wordCount" : "306",
+  "inLanguage": "en",
+  "datePublished": "2026-07-22T10:00:00+08:00",
+  "dateModified": "2026-07-22T10:00:00+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xihutaijixiong.github.io/taichi-bear/cases/ai-company-os/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "西湖太极熊",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xihutaijixiong.github.io/taichi-bear/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://xihutaijixiong.github.io/taichi-bear/" accesskey="h" title="西湖太极熊 (Alt + H)">西湖太极熊</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/cases/" title="案例">
+                    <span>案例</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/products/" title="产品">
+                    <span>产品</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/posts/" title="博客">
+                    <span>博客</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/resources/" title="资源">
+                    <span>资源</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      AI Company OS
+    </h1>
+    <div class="post-description">
+      探索如何利用 AI、知识管理和自动化工作流，构建个人级智能操作系统，将信息、经验和工作流程转化为长期资产。
+    </div>
+    <div class="post-meta">
+
+<span title='2026-07-22 10:00:00 +0800 CST'>July 22, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h1 id="ai-company-os构建个人级-ai-工作与决策系统">AI Company OS：构建个人级 AI 工作与决策系统<a hidden class="anchor" aria-hidden="true" href="#ai-company-os构建个人级-ai-工作与决策系统">#</a></h1>
+<h2 id="案例简介">案例简介<a hidden class="anchor" aria-hidden="true" href="#案例简介">#</a></h2>
+<p>随着 AI 工具快速发展，个人面临的问题已经从“有没有工具”变成：</p>
+<ul>
+<li>
+<p>如何管理越来越多的信息？</p>
+</li>
+<li>
+<p>如何让 AI 真正融入日常工作？</p>
+</li>
+<li>
+<p>如何将经验沉淀为长期资产？</p>
+</li>
+<li>
+<p>如何提高学习、工作和内容创造效率？</p>
+</li>
+</ul>
+<p>基于多年数据分析、业务分析和知识管理实践，我尝试构建一个属于个人的 AI Operating System（AI 操作系统），将 AI、知识管理、数据分析和自动化工作流结合，打造一个持续迭代的个人生产系统。</p>
+<hr>
+<h1 id="背景从工具使用到系统构建">背景：从工具使用到系统构建<a hidden class="anchor" aria-hidden="true" href="#背景从工具使用到系统构建">#</a></h1>
+<p>过去：</p>
+<pre tabindex="0"><code>收集信息
+↓
+保存资料
+↓
+学习工具
+↓
+重复搜索
+↓
+经验流失
+</code></pre><p>问题：</p>
+<ul>
+<li>
+<p>信息越来越多，但无法形成知识</p>
+</li>
+<li>
+<p>学习很多工具，但没有形成工作流</p>
+</li>
+<li>
+<p>AI使用停留在临时问答</p>
+</li>
+<li>
+<p>经验无法复用</p>
+</li>
+</ul>
+<p>因此，我希望建立：</p>
+<pre tabindex="0"><code>输入信息
+    ↓
+AI处理
+    ↓
+知识沉淀
+    ↓
+经验复用
+    ↓
+内容输出
+    ↓
+持续优化
+</code></pre><hr>
+<h1 id="解决方案ai-company-os-架构">解决方案：AI Company OS 架构<a hidden class="anchor" aria-hidden="true" href="#解决方案ai-company-os-架构">#</a></h1>
+<p>AI Company OS 将个人看作一家小型企业，通过不同模块管理个人资产。</p>
+<p>整体架构：</p>
+<pre tabindex="0"><code>                 AI Company OS
+
+                      |
+ ------------------------------------------------
+ |              |              |                |
+知识系统     工作系统       职业系统        内容系统
+
+                      |
+                 AI Layer
+
+                      |
+             AI Agent / Workflow
+</code></pre><hr>
+<h1 id="核心模块">核心模块<a hidden class="anchor" aria-hidden="true" href="#核心模块">#</a></h1>
+<h2 id="01-knowledge-os知识操作系统">01 Knowledge OS（知识操作系统）<a hidden class="anchor" aria-hidden="true" href="#01-knowledge-os知识操作系统">#</a></h2>
+<h3 id="目标">目标<a hidden class="anchor" aria-hidden="true" href="#目标">#</a></h3>
+<p>建立个人长期知识资产库。</p>
+<p>解决：</p>
+<ul>
+<li>
+<p>收藏过多</p>
+</li>
+<li>
+<p>信息分散</p>
+</li>
+<li>
+<p>无法输出</p>
+</li>
+</ul>
+<p>主要方法：</p>
+<h3 id="信息输入">信息输入<a hidden class="anchor" aria-hidden="true" href="#信息输入">#</a></h3>
+<p>来源：</p>
+<ul>
+<li>
+<p>文章</p>
+</li>
+<li>
+<p>视频</p>
+</li>
+<li>
+<p>书籍</p>
+</li>
+<li>
+<p>工作经验</p>
+</li>
+<li>
+<p>AI对话</p>
+</li>
+</ul>
+<p>↓</p>
+<h3 id="ai处理">AI处理<a hidden class="anchor" aria-hidden="true" href="#ai处理">#</a></h3>
+<p>利用 AI：</p>
+<ul>
+<li>
+<p>总结内容</p>
+</li>
+<li>
+<p>提取关键观点</p>
+</li>
+<li>
+<p>分类整理</p>
+</li>
+<li>
+<p>生成关联</p>
+</li>
+</ul>
+<p>↓</p>
+<h3 id="知识沉淀">知识沉淀<a hidden class="anchor" aria-hidden="true" href="#知识沉淀">#</a></h3>
+<p>使用：</p>
+<ul>
+<li>
+<p>Obsidian</p>
+</li>
+<li>
+<p>Markdown</p>
+</li>
+<li>
+<p>双向链接</p>
+</li>
+<li>
+<p>MOC导航</p>
+</li>
+</ul>
+<p>最终形成：</p>
+<pre tabindex="0"><code>信息
+ ↓
+知识
+ ↓
+观点
+ ↓
+内容
+</code></pre><hr>
+<h1 id="02-work-os工作操作系统">02 Work OS（工作操作系统）<a hidden class="anchor" aria-hidden="true" href="#02-work-os工作操作系统">#</a></h1>
+<h3 id="目标-1">目标<a hidden class="anchor" aria-hidden="true" href="#目标-1">#</a></h3>
+<p>提升日常工作的效率和质量。</p>
+<p>主要探索：</p>
+<h2 id="ai辅助分析流程">AI辅助分析流程<a hidden class="anchor" aria-hidden="true" href="#ai辅助分析流程">#</a></h2>
+<p>传统：</p>
+<pre tabindex="0"><code>业务需求
+ ↓
+人工思考
+ ↓
+查询数据
+ ↓
+分析
+ ↓
+写报告
+</code></pre><p>AI增强：</p>
+<pre tabindex="0"><code>业务需求
+ ↓
+AI拆解问题
+ ↓
+分析框架设计
+ ↓
+数据验证
+ ↓
+AI辅助总结
+ ↓
+决策建议
+</code></pre><p>应用场景：</p>
+<ul>
+<li>
+<p>数据分析</p>
+</li>
+<li>
+<p>报告生成</p>
+</li>
+<li>
+<p>信息整理</p>
+</li>
+<li>
+<p>工作流程优化</p>
+</li>
+</ul>
+<hr>
+<h1 id="03-career-os职业操作系统">03 Career OS（职业操作系统）<a hidden class="anchor" aria-hidden="true" href="#03-career-os职业操作系统">#</a></h1>
+<h3 id="目标-2">目标<a hidden class="anchor" aria-hidden="true" href="#目标-2">#</a></h3>
+<p>将职业发展从随机寻找机会，转变为系统管理。</p>
+<p>包含：</p>
+<h2 id="岗位研究系统">岗位研究系统<a hidden class="anchor" aria-hidden="true" href="#岗位研究系统">#</a></h2>
+<p>记录：</p>
+<ul>
+<li>
+<p>JD数据库</p>
+</li>
+<li>
+<p>岗位趋势</p>
+</li>
+<li>
+<p>技能要求</p>
+</li>
+</ul>
+<h2 id="能力成长系统">能力成长系统<a hidden class="anchor" aria-hidden="true" href="#能力成长系统">#</a></h2>
+<p>分析：</p>
+<ul>
+<li>
+<p>当前能力</p>
+</li>
+<li>
+<p>Skill Gap</p>
+</li>
+<li>
+<p>学习路径</p>
+</li>
+</ul>
+<h2 id="求职系统">求职系统<a hidden class="anchor" aria-hidden="true" href="#求职系统">#</a></h2>
+<p>包括：</p>
+<ul>
+<li>
+<p>简历优化</p>
+</li>
+<li>
+<p>面试案例库</p>
+</li>
+<li>
+<p>项目资产库</p>
+</li>
+</ul>
+<p>形成：</p>
+<pre tabindex="0"><code>市场需求
+ ↓
+能力分析
+ ↓
+技能提升
+ ↓
+岗位匹配
+ ↓
+职业升级
+</code></pre><hr>
+<h1 id="04-content-os内容生产系统">04 Content OS（内容生产系统）<a hidden class="anchor" aria-hidden="true" href="#04-content-os内容生产系统">#</a></h1>
+<h3 id="目标-3">目标<a hidden class="anchor" aria-hidden="true" href="#目标-3">#</a></h3>
+<p>将个人经验转化为公开内容和长期资产。</p>
+<p>流程：</p>
+<pre tabindex="0"><code>日常输入
+
+ ↓
+
+知识整理
+
+ ↓
+
+AI辅助加工
+
+ ↓
+
+文章/视频
+
+ ↓
+
+用户反馈
+
+ ↓
+
+优化系统
+</code></pre><p>应用方向：</p>
+<ul>
+<li>
+<p>微信公众号</p>
+</li>
+<li>
+<p>YouTube</p>
+</li>
+<li>
+<p>Blog</p>
+</li>
+<li>
+<p>知识产品</p>
+</li>
+</ul>
+<hr>
+<h1 id="ai-在系统中的角色">AI 在系统中的角色<a hidden class="anchor" aria-hidden="true" href="#ai-在系统中的角色">#</a></h1>
+<p>AI 不只是聊天工具，而是个人智能助手。</p>
+<p>主要应用：</p>
+<h2 id="ai-research-assistant">AI Research Assistant<a hidden class="anchor" aria-hidden="true" href="#ai-research-assistant">#</a></h2>
+<p>帮助：</p>
+<ul>
+<li>
+<p>信息搜索</p>
+</li>
+<li>
+<p>内容总结</p>
+</li>
+<li>
+<p>资料整理</p>
+</li>
+</ul>
+<h2 id="ai-writing-assistant">AI Writing Assistant<a hidden class="anchor" aria-hidden="true" href="#ai-writing-assistant">#</a></h2>
+<p>帮助：</p>
+<ul>
+<li>
+<p>文章结构设计</p>
+</li>
+<li>
+<p>内容优化</p>
+</li>
+<li>
+<p>多平台改写</p>
+</li>
+</ul>
+<h2 id="ai-data-analyst">AI Data Analyst<a hidden class="anchor" aria-hidden="true" href="#ai-data-analyst">#</a></h2>
+<p>帮助：</p>
+<ul>
+<li>
+<p>数据分析思路</p>
+</li>
+<li>
+<p>SQL辅助</p>
+</li>
+<li>
+<p>洞察总结</p>
+</li>
+</ul>
+<h2 id="ai-career-assistant">AI Career Assistant<a hidden class="anchor" aria-hidden="true" href="#ai-career-assistant">#</a></h2>
+<p>帮助：</p>
+<ul>
+<li>
+<p>JD分析</p>
+</li>
+<li>
+<p>简历优化</p>
+</li>
+<li>
+<p>面试准备</p>
+</li>
+</ul>
+<hr>
+<h1 id="使用工具">使用工具<a hidden class="anchor" aria-hidden="true" href="#使用工具">#</a></h1>
+<p>当前探索工具：</p>
+<table>
+  <thead>
+      <tr>
+          <th>领域</th>
+          <th>工具</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>知识管理</td>
+          <td>Obsidian、Markdown</td>
+      </tr>
+      <tr>
+          <td>AI助手</td>
+          <td>ChatGPT、Claude等</td>
+      </tr>
+      <tr>
+          <td>自动化</td>
+          <td>AI Workflow</td>
+      </tr>
+      <tr>
+          <td>内容发布</td>
+          <td>Blog、公众号、YouTube</td>
+      </tr>
+      <tr>
+          <td>数据分析</td>
+          <td>SQL、Python、BI工具</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h1 id="当前成果">当前成果<a hidden class="anchor" aria-hidden="true" href="#当前成果">#</a></h1>
+<p>通过 AI Company OS 探索：</p>
+<h2 id="1-建立个人知识资产体系">1. 建立个人知识资产体系<a hidden class="anchor" aria-hidden="true" href="#1-建立个人知识资产体系">#</a></h2>
+<p>将：</p>
+<ul>
+<li>
+<p>学习资料</p>
+</li>
+<li>
+<p>工作经验</p>
+</li>
+<li>
+<p>AI实践</p>
+</li>
+<li>
+<p>内容素材</p>
+</li>
+</ul>
+<p>统一沉淀。</p>
+<h2 id="2-建立ai增强工作流程">2. 建立AI增强工作流程<a hidden class="anchor" aria-hidden="true" href="#2-建立ai增强工作流程">#</a></h2>
+<p>探索：</p>
+<p>如何让 AI 参与：</p>
+<ul>
+<li>
+<p>分析</p>
+</li>
+<li>
+<p>写作</p>
+</li>
+<li>
+<p>学习</p>
+</li>
+<li>
+<p>决策</p>
+</li>
+</ul>
+<h2 id="3-构建个人品牌基础">3. 构建个人品牌基础<a hidden class="anchor" aria-hidden="true" href="#3-构建个人品牌基础">#</a></h2>
+<p>将：</p>
+<pre tabindex="0"><code>经验
+ ↓
+知识
+ ↓
+内容
+ ↓
+产品
+</code></pre><p>形成长期积累。</p>
+<hr>
+<h1 id="未来方向">未来方向<a hidden class="anchor" aria-hidden="true" href="#未来方向">#</a></h1>
+<p>AI Company OS 仍在持续迭代。</p>
+<p>未来计划：</p>
+<ul>
+<li>
+<p>更多 AI Agent 工作流</p>
+</li>
+<li>
+<p>自动化个人流程</p>
+</li>
+<li>
+<p>开放模板分享</p>
+</li>
+<li>
+<p>构建个人 AI 工作系统产品</p>
+</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer mt-auto py-3 text-center">
+  <div>
+    <span>© 2026 西湖太极熊 · AI & obsidian</span>
+  </div>
+</footer></body>
+
+</html>

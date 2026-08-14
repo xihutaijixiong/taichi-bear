@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>首页 on 西湖太极熊</title>
+    <link>https://xihutaijixiong.github.io/taichi-bear/</link>
+    <description>Recent content in 首页 on 西湖太极熊</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 14 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xihutaijixiong.github.io/taichi-bear/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian首页设计，新手只需要一个插件，不用css直接生成渲染图</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/posts/article9/</link>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/posts/article9/</guid>
+      <description>很多人以为Obsidian好看首页必须懂CSS和前端代码。实际上，只需要一个Admonition插件，结合AI就能生成想要的渲染效果。本文分享了从下载插件、创建ad-flex框架、向AI描述需求，到粘贴代码的完整四步流程。不需要额外主题，不需要学CSS，几分钟就能拥有一个兼具美观和功能性的Obsidian首页。</description>
+    </item>
+    <item>
+      <title>我为什么决定放弃继续维护原来的 Obsidian 库?</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/posts/article8/</link>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/posts/article8/</guid>
+      <description>那obsidian来存储和管理笔记的时代已经过去了，未来一定是不断积累数据资产，挖掘自己价值放大能力的时代。</description>
+    </item>
+    <item>
+      <title>Daily English Speaking Report Prompt</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/resources/daily-english-speaking-report-prompt/</link>
+      <pubDate>Fri, 07 Aug 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/resources/daily-english-speaking-report-prompt/</guid>
+      <description>英语口语报告，记录当日口语日志</description>
+    </item>
+    <item>
+      <title>English speaking coach Prompt</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/resources/english-speaking-coach-prompt/</link>
+      <pubDate>Fri, 07 Aug 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/resources/english-speaking-coach-prompt/</guid>
+      <description>英语口语教练，按照定制规则进行口语陪练</description>
+    </item>
+    <item>
+      <title>免费产品资源分享</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/resources/free-product-link/</link>
+      <pubDate>Fri, 07 Aug 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/resources/free-product-link/</guid>
+      <description>免费产品 · 资源导航</description>
+    </item>
+    <item>
+      <title>免费产品资源目录</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/resources/free-product-catalogue/</link>
+      <pubDate>Fri, 07 Aug 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/resources/free-product-catalogue/</guid>
+      <description>免费产品 · 资源导航</description>
+    </item>
+    <item>
+      <title>Career OS Lite - 免费领取</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/products/career-os-lite/</link>
+      <pubDate>Mon, 03 Aug 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/products/career-os-lite/</guid>
+      <description>把10年工作经验变成AI可识别的职业资产。基于AI的职业资产管理系统，帮助你整理过去经历、提炼核心能力，建立属于自己的职业数据库。</description>
+    </item>
+    <item>
+      <title>AI Company OS</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/cases/ai-company-os/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/cases/ai-company-os/</guid>
+      <description>探索如何利用 AI、知识管理和自动化工作流，构建个人级智能操作系统，将信息、经验和工作流程转化为长期资产。</description>
+    </item>
+    <item>
+      <title>AI Data Analysis Workflow</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/cases/ai-data-analysis-workflow/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/cases/ai-data-analysis-workflow/</guid>
+      <description>基于多年数据分析经验，探索如何将 AI 融入业务分析全过程，从问题拆解、指标设计、数据探索到洞察输出，打造 AI 增强型数据分析工作流。</description>
+    </item>
+    <item>
+      <title>AI Workflow Template（规划中）</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/products/ai-workflow-template/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/products/ai-workflow-template/</guid>
+      <description>正在构建的个人 AI 工作流模板库，将 AI Prompt、知识管理和自动化流程结合，帮助个人建立可复用的 AI 工作方式。</description>
+    </item>
+    <item>
+      <title>Career OS Template（规划中）</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/products/career-os-template/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/products/career-os-template/</guid>
+      <description>正在构建的个人职业发展管理系统，通过 AI、数据分析和知识管理方法，帮助个人系统管理岗位研究、技能成长、项目资产和职业机会。</description>
+    </item>
+    <item>
+      <title>Daily Report Skill v1.0 and Command</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/resources/day-report-skill-and-command/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/resources/day-report-skill-and-command/</guid>
+      <description>用AI来进行自动化日报总结</description>
+    </item>
+    <item>
+      <title>Data Analyst Case Library（规划中）</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/products/ai-data-analyst-case-library/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/products/ai-data-analyst-case-library/</guid>
+      <description>正在构建的数据分析案例库，通过真实业务场景、分析框架和 AI 辅助方法，帮助数据分析人员提升从数据到业务价值的能力。</description>
+    </item>
+    <item>
+      <title>Personal Knowledge System</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/cases/personal-knowledge-system/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/cases/personal-knowledge-system/</guid>
+      <description>探索如何结合 Obsidian、AI 和结构化思维，将碎片化信息转化为个人知识资产，并支持持续学习、内容创作和职业成长。</description>
+    </item>
+    <item>
+      <title>我用 Obsidian 搭建了一个全球信息订阅系统</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/posts/article1/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/posts/article1/</guid>
+      <description>用Obsidian搭建系统化的订阅输入和输出闭环，先要有一个全球订阅输入</description>
+    </item>
+    <item>
+      <title>新手别折腾了：这套 Obsidian &#43; DeepSeek 组合，便宜又能直接用</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/posts/article3/</link>
+      <pubDate>Wed, 22 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/posts/article3/</guid>
+      <description>数据分析师如何用结构化思维拆解业务问题，INTJ视角的思考方式</description>
+    </item>
+    <item>
+      <title>折腾了一圈，最终90%的使用仅仅依赖这5个插件！</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/posts/article2/</link>
+      <pubDate>Tue, 21 Jul 2026 10:00:00 +0800</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/posts/article2/</guid>
+      <description>obsidian高效使用覆盖大部分场景仅仅5个插件就够了</description>
+    </item>
+    <item>
+      <title>我的Obsidian新主页，让我更期待每日打开记录</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/posts/article5/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/posts/article5/</guid>
+      <description>给自己设计一个舒服的首页，让自己每天更愿意打开</description>
+    </item>
+    <item>
+      <title>Obsidian是当前世界最好的笔记工具之一，你是否认可？</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/posts/article7/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/posts/article7/</guid>
+      <description>Obsidian在当下，我认为是值得被认为是当前世界最好的笔记工具之一的，当然它也有自己的确定，当你折腾过头，安装插件过多，也会以后卡，会有插件冲突，但是只要你不过渡折腾，始终还是以专注输入，成长输出为主，使用起来还是非常舒服的。</description>
+    </item>
+    <item>
+      <title>Obsidian Web Clipper 1.5带来新的体验，让我直接和油管界面说ByeBye了</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/posts/article6/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/posts/article6/</guid>
+      <description>1.5版本阅读器功能支持油管视频的字幕交互了，你可以随时看到视频进展，同时看到字幕对应的上下文，暂停后，可以直接进行阅读理解或者记录。</description>
+    </item>
+    <item>
+      <title>Obsidian的两种可视化对比，你喜欢哪种？</title>
+      <link>https://xihutaijixiong.github.io/taichi-bear/posts/article4/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://xihutaijixiong.github.io/taichi-bear/posts/article4/</guid>
+      <description>常用的两种obsidian可视化方法对比介绍，看你适合哪一种？</description>
+    </item>
+  </channel>
+</rss>

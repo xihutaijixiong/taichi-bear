@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Obsidian首页设计，新手只需要一个插件，不用css直接生成渲染图 | 西湖太极熊</title>
+<meta name="keywords" content="">
+<meta name="description" content="很多人以为Obsidian好看首页必须懂CSS和前端代码。实际上，只需要一个Admonition插件，结合AI就能生成想要的渲染效果。本文分享了从下载插件、创建ad-flex框架、向AI描述需求，到粘贴代码的完整四步流程。不需要额外主题，不需要学CSS，几分钟就能拥有一个兼具美观和功能性的Obsidian首页。">
+<meta name="author" content="">
+<link rel="canonical" href="https://xihutaijixiong.github.io/taichi-bear/posts/article9/">
+<link crossorigin="anonymous" href="../../taichi-bear/assets/css/stylesheet.8d28b609a9b9fe056815a797e5dada54f9337ab991200c4b79f12e56ea1d9b9a.css" integrity="sha256-jSi2Cam5/gVoFaeX5draVPkzermRIAxLefEuVuodm5o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://xihutaijixiong.github.io/taichi-bear/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://xihutaijixiong.github.io/taichi-bear/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://xihutaijixiong.github.io/taichi-bear/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://xihutaijixiong.github.io/taichi-bear/apple-touch-icon.png">
+<link rel="mask-icon" href="https://xihutaijixiong.github.io/taichi-bear/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://xihutaijixiong.github.io/taichi-bear/posts/article9/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://xihutaijixiong.github.io/taichi-bear/posts/article9/">
+  <meta property="og:site_name" content="西湖太极熊">
+  <meta property="og:title" content="Obsidian首页设计，新手只需要一个插件，不用css直接生成渲染图">
+  <meta property="og:description" content="很多人以为Obsidian好看首页必须懂CSS和前端代码。实际上，只需要一个Admonition插件，结合AI就能生成想要的渲染效果。本文分享了从下载插件、创建ad-flex框架、向AI描述需求，到粘贴代码的完整四步流程。不需要额外主题，不需要学CSS，几分钟就能拥有一个兼具美观和功能性的Obsidian首页。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-08-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-08-14T00:00:00+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Obsidian首页设计，新手只需要一个插件，不用css直接生成渲染图">
+  <meta name="twitter:description" content="很多人以为Obsidian好看首页必须懂CSS和前端代码。实际上，只需要一个Admonition插件，结合AI就能生成想要的渲染效果。本文分享了从下载插件、创建ad-flex框架、向AI描述需求，到粘贴代码的完整四步流程。不需要额外主题，不需要学CSS，几分钟就能拥有一个兼具美观和功能性的Obsidian首页。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "博客随笔",
+      "item": "https://xihutaijixiong.github.io/taichi-bear/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Obsidian首页设计，新手只需要一个插件，不用css直接生成渲染图",
+      "item": "https://xihutaijixiong.github.io/taichi-bear/posts/article9/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Obsidian首页设计，新手只需要一个插件，不用css直接生成渲染图",
+  "name": "Obsidian首页设计，新手只需要一个插件，不用css直接生成渲染图",
+  "description": "很多人以为Obsidian好看首页必须懂CSS和前端代码。实际上，只需要一个Admonition插件，结合AI就能生成想要的渲染效果。本文分享了从下载插件、创建ad-flex框架、向AI描述需求，到粘贴代码的完整四步流程。不需要额外主题，不需要学CSS，几分钟就能拥有一个兼具美观和功能性的Obsidian首页。",
+  "keywords": [
+    
+  ],
+  "articleBody": "过去，我一直觉得一个好看的Obsidian首页，必须要懂CSS排版，还要会前端HTML代码。那时候我到处找优质博主的CSS文件，试了一套又一套。\nMinimal主题的CSS片段，下载过；Blue Topaz的完整配置，导入过。甚至自己试着改过一些颜色变量，调了半天，最后还是觉得哪里不对。\n不是别人的CSS不好看。而是不管怎么换，始终不是自己真正想要的那个感觉。后来我反复琢磨，同时不断用AI去拆解首页的渲染逻辑，才发现一件事：\n其实根本不需要单独学CSS。直接在Obsidian页面里嵌套HTML和CSS代码，就能生成你想要的排版效果。只需要一个插件——Admonition。\n为什么是Admonition Admonition本身是一个用来创建提示框的插件，很多人用它来做笔记中的高亮块。但它的能力远不止于此。它支持在Obsidian内部直接嵌入HTML代码块，并且可以渲染出完整的样式。这意味着，你可以在不离开Obsidian的情况下，直接在笔记里写一段带CSS的HTML代码，Admonition会帮你渲染出来。\n不需要任何外部工具 不需要编辑器的预览模式切换 不需要额外的主题配置。 写进去，就能看到。这也是为什么我一直推荐新手从Admonition开始——不是因为它最强大，而是因为它门槛最低。\n具体怎么做 整个流程非常简单，四步就走完。\n第1步：下载安装Admonition 打开社区插件市场，搜索Admonition，安装并启用。不需要额外配置，默认设置就够用。\n第2步：生成一个新的ad-flex框架 安装完成后，在Obsidian的命令面板（Ctrl/Cmd+P）里搜索Admonition，创建一个新的Admonition类型。\n选择Flex（弹性布局）类型，这是我最常用的框架。你可以理解为，它就是一个容器。你往里面放什么，它就渲染什么。 第3步：给AI提一个需求Prompt 这一步最关键。把你想要的首页排版描述给AI。比如我常用的需求：\n我需要一个Obsidian首页排版，使用Admonition的ad-flex框架。 整体风格干净、留白多、低刺激。 分为四个区域：\n顶部：一句我的原则语录 左栏：今日状态（一个小的待办区） 中栏：核心快捷入口（3-4个卡片链接） 右栏：最近记录列表（最近7天的笔记链接） 配色柔和，字体大小适中。 不需要很专业的技术术语。把你想象中的样子，说出来就好。\n第4步：AI自动生成，粘贴到首页 AI会返回一段完整的HTML+CSS代码。复制它，粘贴到你创建的Admonition块中。保存，退出编辑模式。首页就渲染好了。\n案例展示 以下是我自己用这个方法生成的首页效果：\n整体排版干净，没有多余按钮，信息量适中。上边是今日状态，下面是核心空间。每天打开，通过今日状态主要是让自己慢下来，然后再进入核心工作空间，开始一天的工作。不需要滚动，不需要切换页面。\n实用技巧 用了一段时间后，我总结了几点经验：\n1、不要追求一次完美。\n我第一次生成的首页，颜色搭配其实不太协调。但没关系，你可以把不满意的地方告诉AI，让它局部修改。不需要重写全部代码。\n2、不同区域之间可以放双链。\n这是Obsidian最核心的能力。在Admonition渲染出的卡片旁边，直接插入双向链接，比如[[今日记录]]、[[周复盘]]。点击就能跳转，日常工作流完全串联起来。无脑修改即可。\n3、AI生成的代码可以反复复用。\n同一个排版框架，换不同的配色和内容，就可以生成为不同用途的页面。我现在的首页、项目看板、学习追踪页，都是用同一套ad-flex框架生成的。\n总结 千万不要以为不会写代码，就做不出美观的首页。过去我花了很多时间去研究CSS、去找别人的配置、去调颜色变量。最终发现，真正适合我的首页，反而是用最简单的方式自己生成的。\n“一个插件，一个AI，几步操作”。你完全可以直接跳过学习CSS的阶段，生成一个你想象中的首页。工具的价值，从来不是它有多强大。而是你能不能用它，做出自己想要的东西。\n如果你也想试试这个方法，后台回复：首页，我把我现在的首页排版对应的代码发你，复制粘贴就能用。如果你需要修改，直接参考这个给AI修改成你自己想要的版本即可。\n如果你已经用Admonition做出了自己的首页，欢迎随时交流。每个人心中都有自己理想的首页样子，工具只是帮你把它呈现出来。\n",
+  "wordCount" : "47",
+  "inLanguage": "en",
+  "datePublished": "2026-08-14T00:00:00Z",
+  "dateModified": "2026-08-14T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://xihutaijixiong.github.io/taichi-bear/posts/article9/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "西湖太极熊",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xihutaijixiong.github.io/taichi-bear/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://xihutaijixiong.github.io/taichi-bear/" accesskey="h" title="西湖太极熊 (Alt + H)">西湖太极熊</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/cases/" title="案例">
+                    <span>案例</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/products/" title="产品">
+                    <span>产品</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/posts/" title="博客">
+                    <span>博客</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://xihutaijixiong.github.io/taichi-bear/resources/" title="资源">
+                    <span>资源</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Obsidian首页设计，新手只需要一个插件，不用css直接生成渲染图
+    </h1>
+    <div class="post-description">
+      很多人以为Obsidian好看首页必须懂CSS和前端代码。实际上，只需要一个Admonition插件，结合AI就能生成想要的渲染效果。本文分享了从下载插件、创建ad-flex框架、向AI描述需求，到粘贴代码的完整四步流程。不需要额外主题，不需要学CSS，几分钟就能拥有一个兼具美观和功能性的Obsidian首页。
+    </div>
+    <div class="post-meta">
+
+<span title='2026-08-14 00:00:00 +0000 UTC'>August 14, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>过去，我一直觉得一个好看的Obsidian首页，必须要懂CSS排版，还要会前端HTML代码。那时候我到处找优质博主的CSS文件，试了一套又一套。</p>
+<p>Minimal主题的CSS片段，下载过；Blue Topaz的完整配置，导入过。甚至自己试着改过一些颜色变量，调了半天，最后还是觉得哪里不对。</p>
+<p>不是别人的CSS不好看。而是不管怎么换，始终不是自己真正想要的那个感觉。后来我反复琢磨，同时不断用AI去拆解首页的渲染逻辑，才发现一件事：</p>
+<p>其实根本不需要单独学CSS。直接在Obsidian页面里嵌套HTML和CSS代码，就能生成你想要的排版效果。<strong>只需要一个插件——Admonition</strong>。</p>
+<hr>
+<h2 id="为什么是admonition">为什么是Admonition<a hidden class="anchor" aria-hidden="true" href="#为什么是admonition">#</a></h2>
+<p>Admonition本身是一个用来创建提示框的插件，很多人用它来做笔记中的高亮块。但它的能力远不止于此。它支持在Obsidian内部直接嵌入HTML代码块，并且可以渲染出完整的样式。这意味着，你可以在不离开Obsidian的情况下，直接在笔记里写一段带CSS的HTML代码，Admonition会帮你渲染出来。</p>
+<ul>
+<li>不需要任何外部工具</li>
+<li>不需要编辑器的预览模式切换</li>
+<li>不需要额外的主题配置。</li>
+</ul>
+<p>写进去，就能看到。这也是为什么我一直推荐新手从Admonition开始——不是因为它最强大，而是因为它门槛最低。</p>
+<hr>
+<h2 id="具体怎么做">具体怎么做<a hidden class="anchor" aria-hidden="true" href="#具体怎么做">#</a></h2>
+<p>整个流程非常简单，四步就走完。</p>
+<h3 id="第1步下载安装admonition">第1步：下载安装Admonition<a hidden class="anchor" aria-hidden="true" href="#第1步下载安装admonition">#</a></h3>
+<p>打开社区插件市场，搜索Admonition，安装并启用。不需要额外配置，默认设置就够用。</p>
+<h3 id="第2步生成一个新的ad-flex框架">第2步：生成一个新的ad-flex框架<a hidden class="anchor" aria-hidden="true" href="#第2步生成一个新的ad-flex框架">#</a></h3>
+<p>安装完成后，在Obsidian的命令面板（Ctrl/Cmd+P）里搜索Admonition，创建一个新的Admonition类型。</p>
+<p>选择Flex（弹性布局）类型，这是我最常用的框架。你可以理解为，它就是一个容器。你往里面放什么，它就渲染什么。
+<img alt="配图" loading="lazy" src="../../taichi-bear/posts/article9/img/%E6%8F%92%E5%9B%BE1.png"></p>
+<h3 id="第3步给ai提一个需求prompt">第3步：给AI提一个需求Prompt<a hidden class="anchor" aria-hidden="true" href="#第3步给ai提一个需求prompt">#</a></h3>
+<p>这一步最关键。把你想要的首页排版描述给AI。比如我常用的需求：</p>
+<blockquote>
+<p>我需要一个Obsidian首页排版，使用Admonition的ad-flex框架。
+整体风格干净、留白多、低刺激。
+分为四个区域：</p>
+<ul>
+<li>顶部：一句我的原则语录</li>
+<li>左栏：今日状态（一个小的待办区）</li>
+<li>中栏：核心快捷入口（3-4个卡片链接）</li>
+<li>右栏：最近记录列表（最近7天的笔记链接）
+配色柔和，字体大小适中。</li>
+</ul>
+</blockquote>
+<p>不需要很专业的技术术语。把你想象中的样子，说出来就好。</p>
+<h3 id="第4步ai自动生成粘贴到首页">第4步：AI自动生成，粘贴到首页<a hidden class="anchor" aria-hidden="true" href="#第4步ai自动生成粘贴到首页">#</a></h3>
+<p>AI会返回一段完整的HTML+CSS代码。复制它，粘贴到你创建的Admonition块中。保存，退出编辑模式。首页就渲染好了。</p>
+<hr>
+<h2 id="案例展示">案例展示<a hidden class="anchor" aria-hidden="true" href="#案例展示">#</a></h2>
+<p>以下是我自己用这个方法生成的首页效果：</p>
+<p><img alt="配图" loading="lazy" src="../../taichi-bear/posts/article9/img/%E6%8F%92%E5%9B%BE2.png"></p>
+<p>整体排版干净，没有多余按钮，信息量适中。上边是今日状态，下面是核心空间。每天打开，通过今日状态主要是让自己慢下来，然后再进入核心工作空间，开始一天的工作。不需要滚动，不需要切换页面。</p>
+<hr>
+<h2 id="实用技巧">实用技巧<a hidden class="anchor" aria-hidden="true" href="#实用技巧">#</a></h2>
+<p>用了一段时间后，我总结了几点经验：</p>
+<p><strong>1、不要追求一次完美。</strong></p>
+<p>我第一次生成的首页，颜色搭配其实不太协调。但没关系，你可以把不满意的地方告诉AI，让它局部修改。不需要重写全部代码。</p>
+<p><strong>2、不同区域之间可以放双链。</strong></p>
+<p>这是Obsidian最核心的能力。在Admonition渲染出的卡片旁边，直接插入双向链接，比如<code>[[今日记录]]</code>、<code>[[周复盘]]</code>。点击就能跳转，日常工作流完全串联起来。无脑修改即可。</p>
+<p><strong>3、AI生成的代码可以反复复用。</strong></p>
+<p>同一个排版框架，换不同的配色和内容，就可以生成为不同用途的页面。我现在的首页、项目看板、学习追踪页，都是用同一套ad-flex框架生成的。</p>
+<hr>
+<h2 id="总结">总结<a hidden class="anchor" aria-hidden="true" href="#总结">#</a></h2>
+<p>千万不要以为不会写代码，就做不出美观的首页。过去我花了很多时间去研究CSS、去找别人的配置、去调颜色变量。最终发现，真正适合我的首页，反而是用最简单的方式自己生成的。</p>
+<p>“一个插件，一个AI，几步操作”。你完全可以直接跳过学习CSS的阶段，生成一个你想象中的首页。工具的价值，从来不是它有多强大。而是你能不能用它，做出自己想要的东西。</p>
+<p>如果你也想试试这个方法，后台回复：<strong>首页</strong>，我把我现在的首页排版对应的代码发你，复制粘贴就能用。如果你需要修改，直接参考这个给AI修改成你自己想要的版本即可。</p>
+<p>如果你已经用Admonition做出了自己的首页，欢迎随时交流。每个人心中都有自己理想的首页样子，工具只是帮你把它呈现出来。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer mt-auto py-3 text-center">
+  <div>
+    <span>© 2026 西湖太极熊 · AI & obsidian</span>
+  </div>
+</footer></body>
+
+</html>
